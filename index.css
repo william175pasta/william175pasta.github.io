@@ -12,18 +12,28 @@
 }             
 #nav {  
         height: 80px;
-        background-color:black;}           
+        background-color:blue;}           
 #nav ul {
         list-style: none;
         margin-left: 1000px;}               
 #nav li {
         display: inline;
-        line-height: 40px;}
+        line-height: 40px;              
+        color:white;
+}
 #nav a {
         color: #fff;
         text-decoration: none;
         padding: 20px 20px;}
-    
+#xx{
+        position:absolute;
+        left:88px;
+                
+          
+}
+        
+
+
 .head{
         width:100%;
         background-color:black;
@@ -57,7 +67,6 @@
         justify-content: center;
         align-items: center;
         color: black;
-        text-align:center;
         font-size: 26px;font-weight: bold;
         width: 100%;
 }
