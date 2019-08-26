@@ -1,0 +1,71 @@
+.header{
+        width: 100%;
+        padding: 0px;
+        font-size: 18px;
+        font-weight: bold;
+}           
+*{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-family:'微軟正黑體';
+}             
+#nav {  
+        height: 80px;
+        background-color:black;}           
+#nav ul {
+        list-style: none;
+        margin-left: 1000px;}               
+#nav li {
+        display: inline;
+        line-height: 40px;}
+#nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 20px 20px;}
+    
+.head{
+        width:100%;
+        background-color:black;
+        color: wheat;
+        text-align:center;
+        font-weight: bold;
+        font-size:20px;
+}
+.content{
+        text-align:center;
+        font-weight: bold;
+        font-size:22px;     
+}
+
+.content2 {
+        display: flex;
+        height: 150px;
+        padding: 10px;
+        background-color:white;
+        flex-wrap: wrap;
+        text-align:center;  
+        font-size:18px;
+            
+}
+
+.item {
+        flex: 1;
+        background-color:white;
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align:center;
+        font-size: 26px;font-weight: bold;
+        width: 100%;
+}
+    
+#footer{
+        width: 100%;
+        background: black;
+        color: red;
+        text-align:center;  
+    }   
+    
