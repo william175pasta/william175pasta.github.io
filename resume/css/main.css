@@ -28,6 +28,18 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+	.arrow {
+		float:left;
+		position:relative;
+		width: 0px;
+	  height: 0px;
+	  border-style: solid;
+	  border-width: 3em 3em 0 3em;
+	  border-color: red transparent transparent transparent;
+		-webkit-transform:rotate(360deg)
+	  }
+
+
 
 body {
 	line-height: 1;
@@ -2139,7 +2151,8 @@ input, select, textarea {
 		}
 
 	label {
-		color: #000000;
+		color: red;
+		color: red;
 		display: block;
 		font-family: "Raleway", Helvetica, sans-serif;
 		font-size: 0.75rem;
@@ -2494,7 +2507,7 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
+			display: block;actions
 			margin: 3rem 0;
 			width: 100%;
 		}
@@ -2506,7 +2519,7 @@ input, select, textarea {
 			.image.main:first-child {
 				margin-top: 0;
 			}
-
+		/*個人首頁圖片位置*/
 		.image.fill {
 			height: 100%;
 			left: 0;
