@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>william resume</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,
+         initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!-- 1mobile -->
+        <!-- <link rel="stylesheet" href="../css/rwdtest.css" /> -->
+        <link rel="stylesheet" href="../css/rwdtest.css" />
+
+        <style type="text/css">
+            .boxa {
+                background-color: #ffa;
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+
+            .boxb {
+                background-color: #aaf;
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="boxa">
+            boxa
+        </div>
+        <div class="boxb">
+            boxb
+        </div>
+        <script type="text/javascript" src="../js/jqueryTest/jquery.min.js">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".boxa").click(function () {
+                    $(".boxb").toggle();
+                })
+            })
+        </script>
+    </body>
+
+</html>
