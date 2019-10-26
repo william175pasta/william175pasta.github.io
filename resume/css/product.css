@@ -1,10 +1,14 @@
 img {
 width: 400px;
 height: 280px;
+
+
 }
+
 .pastaProduct{
     display:flex;
     flex-direction: column; 
+    margin-bottom: 90px;
 }
 h2{
     text-align: center;
@@ -19,16 +23,22 @@ li{
 summary{
     font-style: italic;
     color:darkgreen;
+    transition:color .5s
 }
 b{
     color:red;
 }
 footer{
     text-align: center;
-    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left:0;
     width:100%;
-    height:100px;
-    color:grey;
+    color:rgb(71, 67, 67);
+    opacity:.5; /*透明程度 */
+    background-color:gainsboro;
+    line-height: 10px;
+    padding: 20px 0;
 }
 header{
     font-style: italic;
@@ -41,4 +51,54 @@ body{
 a{
     text-decoration:none;
     color:red;
+ 
+}
+td{
+    position: relative;
+}
+
+.tab{
+    color:#fff;
+    background-color:#f00;
+    padding: 5px 10px;
+    position: absolute;
+    top:1px;
+    right:1px;
+    animation:aHot .7s 0s ease infinite ;
+    
+}
+
+details summary:hover{
+    color:#f00;
+    cursor:pointer;
+}
+
+a:hover{
+    background-color: red;
+    color:white;
+    
+}
+
+@keyframes aHot{
+        0%{background-color:red; color: white;}
+        50%{background-color: white;color:red;}  
+        100%{background-color:red; color: white;} 
+}
+
+@media screen and (max-width:768px){
+        img{
+            width:100%;
+            height: auto;}
+
+        td{
+            display: flex;
+        }
+      
+}
+.pastaTitle{
+    background-color: blanchedalmond;;
+    cursor: pointer;
+}
+.content{
+    display: none;
 }
