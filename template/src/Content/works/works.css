@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+    background-color: #ccc;
+}
+
+#top{
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    background-color:steelblue;
+    color:#eee;
+}#top h2 {
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+#banner{
+    width: 100%;
+    margin: 0 auto;
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(../../img/header/pasta.jpeg);
+}
+
+
+#content{
+    
+    width:1200px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding:50px 200px;
+    font-size: 14px;
+}
+#content p{
+    /*設定文字落段下方空一行的間距*/
+    padding-bottom: 16px;
+    
+}
+#down{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    background-color: #aaa ;
+}
+#down h4 {
+line-height: 100px;
+}
+
+
+
+
+
+
+#navTop{
+    background-color: lightcoral;
+    width: 1200px;
+    margin:0 auto;
+}
+
+#navTop  .nav{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    line-height: 50px;
+    justify-content: center;
+
+}
+
+
+
+
+#navTop .nav ul {
+
+    list-style: none;
+}
+
+#navTop .nav li{
+    margin-left: 100px;
+    display: inline-block;
+    font-size: 18px;
+    
+    margin:0 30px;
+    
+}
+#navTop .nav li a {
+    line-height: 40px;
+
+    color:#eee;
+    text-decoration: none;
+}
+#navTop .nav li a:hover {
+    color:#8b0000;
+}
+
+
+.title{
+    width: 800px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 1px solid rosybrown;
+    color: #eee;
+
+}
+#title_1{
+    background-color:firebrick ;
+    
+}
+
+#title_2{
+    background-color: firebrick;
+   
+}
+#title_3{
+    background-color: firebrick;
+}
+
+
+#content .box{
+    width: 800px;
+    height: 250px;
+    padding: 20px;
+    margin: 10px auto;
+    border : 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: none;
+}
+#content .box-open {
+    display: block;
+}
+.box ul {
+    list-style:none;
+}
+.box h2{
+    margin-left: 25px;
+}
+.box ul li{
+    margin:0 30px;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.box ol {
+    margin-top: 10px;
+    margin-left: 40px;
+}
