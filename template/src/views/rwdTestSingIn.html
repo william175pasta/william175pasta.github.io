@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="" />
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML&CSS&RWD</title>
+        <link rel="stylesheet" href="../assets/css/rest.css">
+        <link rel="stylesheet" href="../assets/css/rwdTestSingIn.css">
+        <link rel="stylesheet" href="../assets/css/menuNav.css">
+
+        <!-- i-con -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity="sha384–5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+
+
+
+
+        <div class="container  p-0">
+            <input type="checkbox" id="menuControl">
+            <div class="headerContent">
+                <div class="logo">
+                    <img src="../assets/img/picColor/regHotels.jpg" style="width: 55%;">
+                </div>
+                <label for="menuControl" class="menuBtn">
+                    <img class="menuBtnImg" src="../assets/img/picColor/BTN.png">
+                </label>
+                <nav>
+                    <a href="./index.html">Home</a>
+                    <a href="#">News</a>
+                    <a href="">Maps</a>
+                    <a href="#">Chef</a>
+                    <a href="../views/rwdTestSingIn.html">FormTest</a>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-12">
+                    <div id="a01">
+                        <div class="container">
+                            <button id="close">X</button>
+                            <div class="titleContent">
+                                <h3 class="title">wlecome測試</h3>
+                            </div>
+                            <div class="inputContent">
+                                <input class="email" type="text" placeholder="請輸入電子信箱 E-mail" />
+                                <input class="password" type="text" placeholder="請輸入6-15碼英數混和密碼" />
+                                <p>英文字母需區分大小寫</p>
+                                <div class="verification">
+                                    <input class="sixnumber" type="text" placeholder="請輸入右圖6碼數字" />
+                                    <img class="sixnumberIMG" src="../assets/img/picColor/777.jpg">
+                                </div>
+                            </div>
+                            <div class="buttonContent">
+                                <button class="button" type="button">確認</button>
+                                <label>
+                                    <input class="checkbox" type="checkbox"> 記住我的帳號
+                                </label>
+                            </div>
+                            <div class="textContent">
+                                <div class="text">
+                                    <a href="#">免費註冊</a>
+                                    <a href="#">忘記密碼</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div id="a02">
+                        <div class="container">
+                            <div class="title">
+                                <ul class="tapMenu">
+                                    <li class="tapMenuList" id="list1">
+                                        <a href="#" id="tap1" class="nowTab">會員登入</a>
+                                    </li>
+                                    <li class="tapMenuList" id="list2">
+                                        <a href="#" id="tap2">手機號碼註冊</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="box open" id="boxList1">
+                                <div class="boxContent">
+                                    <div class="inputContent">
+                                        <input class="email" type="text" placeholder="請輸入E-mail/手機號碼">
+                                        <input class="password" type="text" placeholder="請輸入密碼(6-20英數字)">
+                                    </div>
+                                    <div class="buttonContent">
+                                        <button class="button">登入</button>
+                                        <div class="text">
+                                            <label>
+                                                <input class="checkbox" type="checkbox">記住我
+                                            </label>
+                                            <a href="#">忘記密碼</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box" id="boxList2">
+                                <div class="boxContent">
+                                    <div class="titleContent">
+                                        <h5>加入專屬會員</h5>
+                                        <p>我們將發送簡訊驗證碼至您的手機內</p>
+                                    </div>
+                                    <div class="inputContent">
+                                        <input class="phone" type="text" placeholder="請輸入手機號碼" value="TW +886 ">
+                                    </div>
+                                    <div class="buttonContent">
+                                        <button class="button">下一步</button>
+                                        <div class="text">
+                                            <p>收到簡訊驗證碼後，請依照步驟完成驗證註冊</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="right">
+                        Lative & momo
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-12">
+                    <div id="a03">
+                        <div class="container">
+                            <div class="titleContent">
+                                <img class="img" src="../assets/img/picColor/pchomePic.jpg">
+                                <div class="ulContent">
+                                    <ui class="tap">
+                                        <li class="userList"><a class="user" href="#">會員登入</a></li>
+                                        <li class="divider">|</li>
+                                        <li class="verList"><a class="reg" href="#">立即註冊</a></li>
+                                    </ui>
+                                </div>
+                            </div>
+                            <div class="inputContnet">
+                                <input type="text" class="email" placeholder="請輸入手機號碼 或 Email">
+                                <input type="text" class="password" placeholder="請輸入密碼 ( 英文大小寫有差別 ) ">
+                            </div>
+                            <div class="buttonContent">
+                                <div class="text">
+                                    <label>
+                                        <input class="checkbox" type="checkbox" checked>記住帳號
+                                    </label>
+                                    <a href="#">忘記密碼</a>
+                                </div>
+                                <button class="button">登入</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12">
+                    <div class="right">
+                        pchome
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-12 shopee1 open ">
+                    <div id="a04" class="a04Shopee">
+                        <div class="container">
+                            <div class="titleContent">
+                                <div class="title">
+                                    <h5>註冊</h5>
+                                    <a id="shopeeBTN1" href="#">登入</a>
+                                </div>
+                            </div>
+                            <div class="inputContent">
+                                <input class="phone" type="text" placeholder="手機號碼">
+                                <div class="rows">
+                                    <input class="inputVerCode" type="text" placeholder="請輸入驗證碼">
+                                    <img class="imgCode" src="../assets/img/picColor/777.jpg">
+                                </div>
+                                <div class="rows">
+                                    <input type="text" placeholder="驗證碼">
+                                    <button type="button">寄送驗證碼</button>
+                                </div>
+                                <p>
+                                    若要繼續註冊，請先閱讀並同意蝦皮購物的服務條款與隱私權政策
+                                    <a href="#">服務條款</a>&<a href="#">隱私權政策</a>
+                                </p>
+                            </div>
+                            <div class="buttonContent">
+                                <button class="cancel" type="button">取消</button>
+                                <button class="registered" type="button">註冊</button>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="fastLinkContent">
+                            <div class="fastLink">
+                                <div class="container-fluid">
+                                    <div class="row iconBox">
+                                        <div class="col-xl-4 col-12 line">
+                                            <div class="iconContent ">
+                                                <img class="fastLinkImg" src="../assets/img/picColor/logo1.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-12 facebook ">
+                                            <div class="iconContent ">
+                                                <img class="fastLinkImg" src="../assets/img/picColor/logo2.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-12 google ">
+                                            <div class="iconContent ">
+                                                <img class="fastLinkImg" src="../assets/img/picColor/logo3.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12 shopee2">
+                    <div id="a04" class="a04Shopee">
+                        <div class="container">
+                            <div class="titleContnet">
+                                <div class="titleContent">
+                                    <div class="title">
+                                        <h5>登入</h5>
+                                        <a id="shopeeBTN2" href="#">註冊</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputContent">
+                                <input class="phone" type="text" placeholder="Email/ 手機號碼/ 使用者帳號">
+                                <input class="password" type=" text" placeholder="密碼"">
+                            </div>
+                            <div class=" textContent">
+                                <a class="forgot" href="">忘記密碼</a>
+                                <div class="symbol">|</div>
+                                <a class="help" href="">需要幫助 ?</a>
+                            </div>
+                            <div class=" buttonContent">
+                                <button class="cancel" type="button">取消</button>
+                                <button class="signin"" type=" button">登入</button>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="fastLinkContent">
+                            <div class="fastLink">
+                                <div class="container-fluid">
+                                    <div class="row iconBox">
+                                        <div class="col-xl-4 col-12 line">
+                                            <div class="iconContent ">
+                                                <img class="fastLinkImg" src="../assets/img/picColor/logo1.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-12 facebook ">
+                                            <div class="iconContent ">
+                                                <img class="fastLinkImg" src="../assets/img/picColor/logo2.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-12 google ">
+                                            <div class="iconContent ">
+                                                <img class="fastLinkImg" src="../assets/img/picColor/logo3.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    <script src="../assets/js/rwdTest.js"></script>
+
+</html>
