@@ -1,0 +1,77 @@
+table{
+    border:1px solid #ccc;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin: 30px auto;
+}
+th{
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    background-color: whitesmoke;
+}
+tr{
+    border-bottom: 1px solid #000;
+}
+td{
+    padding: 20px;
+}
+ .table caption{
+    padding-bottom:30px ;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#menuDishes{
+    width:80%;
+    margin:0 auto;
+}
+#menuDishes .menuDishes-tilte {
+    background-color: rgb(249, 254, 255);
+
+
+
+}
+#menuDishes .menuDishes-tilte h3{
+    text-align:start;
+    background-color:rgb(238, 238, 238);
+    font-size: 20px;
+    padding: 15px 30px;
+    font-weight: 600;
+    color: rgb(221, 53, 53);
+}
+#menuDishes .menuDishes-tilte h6{
+    
+    font-size: 18px;
+    padding: 15px 30px;
+    font-weight: 600;
+
+
+}
+#menuDishes .menuDishes-tilte p{
+
+    font-size: 16px;
+    padding: 15px 30px;
+
+
+}
+
+#restaurantMap{
+    
+    display: block;
+    float: right;
+    background-color: rgb(221, 53, 53);
+
+    color:#eee;
+    border: 1px solid;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+#restaurantMap:hover{
+    background-color:#eee;
+    color:rgb(221, 53, 53);
+}
