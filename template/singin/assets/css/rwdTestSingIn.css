@@ -1,0 +1,609 @@
+#a01,#a02,#a03,#a04{
+    font-family: 微軟正黑體;
+}
+/* 第一個登入框 */
+
+#a01{
+    margin: 20px 0;
+
+
+
+
+    
+}
+#a01 .container{
+    
+    width:100%;
+    background-color:	#F5F5F5;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    position: relative;
+    padding:10px 20px;
+}
+
+#a01 .container #close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border-radius: 100%; */
+    outline: none;
+    width:30px;
+    height:30px;
+    text-align: center; 
+    border:none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #AA0000;
+    color: #eee;
+}   
+
+
+#a01 .container .titleContent{
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+#a01 .container .titleContent .title{
+    font-weight: 700;
+    font-size: 32px;
+    color:#AA0000;
+}
+
+#a01 .container .inputContent{
+    margin-bottom: 20px;
+}
+
+#a01 .container .inputContent .email{
+    width: 100%;
+    height:40px;
+    margin-bottom: 20px;
+    padding:10px;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+
+}
+#a01 .container .inputContent .password{
+    width: 100%;
+    height:40px;
+   
+    padding:10px;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+}
+#a01 .container .inputContent p{
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 2px;
+
+}
+
+#a01 .container .inputContent .sixnumber{
+    width: 70%;
+    height:40px;
+    padding:10px;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+}
+#a01 .container .inputContent .sixnumberIMG{
+    width: 28%;
+    height:38px;
+    padding-bottom:5px;
+}
+#a01 .container .buttonContent {
+    display:flex;
+    flex-direction: column;
+    
+}
+#a01 .container .buttonContent .button{
+    width: 100%;
+    height:40px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #eee;
+    cursor: pointer;
+    background-color: #eee;
+    color:#AA0000;
+    margin-bottom: 15px;
+}
+#a01 .container .buttonContent .button:hover{
+    color:#eee;
+    background-color:#AA0000;
+}
+#a01 .container .buttonContent label{
+    padding-left: 5px;
+    font-size: 14px;
+}
+#a01 .container .textContent .text a{
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    color: darkblue;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+#a01 .container .textContent .text a:hover{
+    color: red;
+
+}
+#a01 .container .textContent .text{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/* 第二個登入框 */
+#a02{
+    margin: 20px 0;
+}
+#a02 .container{
+    width:100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding:10px;
+
+}
+#a02 .container ul{
+    margin: 0;
+	padding: 0;
+}
+#a02 .container .tapMenu li{
+    display: inline-block;
+    position: relative;
+    border:1px solid #F5F5F5;
+    height: 50px;
+	float: left;
+    
+}
+/* 點擊標頭文字變色 背景變色  初始預設在第一個 li顯示*/
+#a02  .tapMenu .tapMenuList a.nowTab {
+	background-color: #FFF;
+	color:	rgb(112, 38, 38);
+	font-weight:bold;
+	
+}
+
+/* 點擊標頭  標頭上面顯示顏色*/
+#a02 .container .tapMenu .topcolor{
+    border-top: 2px solid #5e3b25;
+}
+
+/* 用z-index 方式蓋過BOX的border-top線  所以高度多一點*/
+#a02 .container .tapMenu li a{
+    position:relative;
+    z-index:99;
+    width: 100%;
+    height: 52px;
+    text-decoration: none;
+    display: block;
+    padding:10px 20px;
+    color:	#A9A9A9 ;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+#a02 .container .inputContent{
+    padding:10px;
+    margin-bottom: 20px;
+}
+/* Box z-index 要設比A區塊低 */
+#a02 .container .box{
+    z-index:11;
+    padding: 20px 30px;
+    width:100%;
+    height: 350px;
+    border: 1px solid  #F5F5F5;
+    display: none;
+    float: left;
+    overflow: hidden;
+    position:relative;
+}
+/* 點擊 顯示box */
+#a02 .container .open {
+    display: block;
+}
+
+#a02 .container .inputContent .email{
+    margin-top: 40px;
+}
+
+#a02 .container .inputContent .email,
+#a02 .container .inputContent .password,
+#a02 .container .inputContent .phone{
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid#DCDCDC;
+}
+
+::placeholder{
+    font-size: 14px;
+    color: #DCDCDC;
+    letter-spacing: 1px;
+}
+
+#a02 .container .buttonContent .button{
+    width: 100%;
+    height:40px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #5e3b25;
+    cursor: pointer;
+    background-color: #5e3b25;
+    color:#eee;
+    margin-bottom: 15px;
+}
+#a02 .container .buttonContent .button:hover{
+    color:#eee;
+    background-color:	tan;
+    border:1px solid 	tan;
+
+}
+
+#a02 .container .buttonContent {
+    display: flex;
+    flex-direction: column;
+}
+#a02 .container .buttonContent .checkbox{
+    margin-right: 5px;
+    
+}
+#a02 .container .buttonContent .text{
+    font-size: 14px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:#A9A9A9;
+    padding-top: 5px;
+}
+
+
+#a02 .container .buttonContent .text a{
+    color:#A9A9A9;
+}
+/* boxList2 */
+
+#a02 .container .boxContent .titleContent{
+    margin-top: 35px;
+    text-align: center;
+    padding: 0 20px;
+}
+#a02 .container .boxContent .titleContent h5{
+    color:#666666;
+    font-weight:bold;
+}
+#a02 .container .boxContent .titleContent p{
+        font-size: 12px;
+        color:	#A9A9A9;
+}
+
+
+/* 第三個登入框 */
+
+#a03{
+    margin: 20px 0; 
+}
+
+#a03 .titleContent{
+    width: 100%;
+}
+
+#a03 .titleContent .img{
+    width: 90%;
+}
+#a03 .ulContent{
+    margin-top: 10px;
+}
+#a03 .inputContnet .tap{
+    list-style: none;
+}
+
+#a03 .titleContent .userList,
+#a03 .titleContent .verList,
+#a03 .titleContent .divider{
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+#a03 .titleContent .user{
+    text-decoration: none;
+    color:	#4169E1;
+    font-weight: bold;
+    font-size: 18px;
+}
+#a03 .titleContent .reg{
+    text-decoration: none;
+    color:#C0C0C0;
+    font-weight: bold;
+    font-size: 18px;
+
+    
+}
+#a03 .titleContent .tap{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+#a03 .inputContnet .email,
+#a03 .inputContnet .password{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 0 20px;
+    margin-bottom:20px;
+    border: 1px solid 	#DCDCDC;
+    border-radius: 2px;
+}
+#a03 ::placeholder{
+    font-size: 14px;
+    color: #696969;
+    letter-spacing: 1px;
+}
+#a03 .container .buttonContent .button{
+    width: 100%;
+    height:50px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #1b92ee;
+    cursor: pointer;
+    background-color:#1b92ee;
+    color:#eee;
+    margin-bottom: 15px;
+}
+#a03 .container .buttonContent .text {
+    margin-bottom:10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 第四個shopee登入框 */
+
+
+#a04 .container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    background-color: #fff;
+ 
+}
+
+#a04 .container .titleContent{
+    padding: 0 10px;
+}
+#a04 .container .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+#a04 .container .title a{
+    display: inline-block;
+    text-decoration: none;
+    color:#ee4d2d;
+    font-weight: bolder;
+}
+#a04 .container .inputContent{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+#a04 .container .inputContent input{
+    margin-bottom: 20px;
+    padding:10px;
+    border: 1px solid 	#DCDCDC;
+    outline: none;
+}
+
+#a04 .container .inputContent input:focus{
+    border: 1px solid black;
+
+}
+
+#a04 .container .inputContent .rows{
+    display: flex;
+    flex-direction: row;
+}
+#a04 .container .inputContent .rows .inputVerCode{
+    width: 70%;
+}
+#a04 .container .inputContent .rows .imgCode{
+    width: 30%;
+    height: 48px;
+
+}
+
+#a04 .container .inputContent .rows input{
+    width: 75%;
+}
+#a04 .container .inputContent .rows button{
+    width: 25%;
+    height: 47px;
+    font-size: 14px;
+    outline: none;
+    background-color: #eee;
+    border: .5px solid #DCDCDC;
+    cursor: pointer;
+
+}
+
+
+
+
+
+#a04 ::placeholder{
+    font-size: 14px;
+    color:#696969;
+    letter-spacing: 1px;
+}
+
+
+
+#a04 .container .inputContent p{
+    font-size: 14px;
+    text-align: center;
+}
+
+#a04 .container .buttonContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#a04 .container .buttonContent button{
+    width: 33%;
+    height: 40px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+    border:none;
+    
+}
+
+#a04 .container .buttonContent .cancel{
+    color:	#A9A9A9';
+}
+#a04 .container .buttonContent .cancel:hover{
+    background-color: #DCDCDC; 
+}
+
+#a04 .container .buttonContent .registered,
+#a04 .container .buttonContent .signin{
+    color:#eee;
+    background-color:#ee4d2d;
+}
+#a04 .fastLinkContent{
+    margin-bottom: 50px;
+    background-color:	#F5F5F5;
+    padding:8px 0;
+
+}
+#a04 .fastLinkContent .fastLinkImg{
+    border-radius: 3px;
+    width:98%;
+
+}
+#a04 .container .textContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    padding:10px;
+    font-size: 14px;
+}
+#a04 .container .textContent .forgot{
+    color:#ee4d2d;
+
+}
+#a04 .container  .textContent a,
+#a04 .container  .textContent div{
+    margin-left: 10px;
+    text-decoration: none;
+}
+.shopee1 {
+    display: none;
+}
+.shopee2 {
+    display: none;
+}
+.open{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #a04 .fastLinkContent{
+    width: 100%;
+    margin-top: 0px;
+    background-color:#F5F5F5;
+   
+}
+#a04 .fastLinkContent .fastLink{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+#a04 .fastLinkContent .iconContent{
+        width:32%;
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    
+        cursor: pointer;
+}
+
+#a04 .fastLinkContent .iconContent p{
+    width: 100%;
+    margin-left: 20px;
+    text-align: center;
+    height: 30px;
+    line-height:40px;
+    font-weight: bold;
+}
+
+#a04 .fastLinkContent .fastLink .line{
+    background-color: #00c300;
+}
+
+#a04 .fastLinkContent .fastLink .facebook{
+    background-color: #3b5999;
+}
+
+#a04 .fastLinkContent .fastLink .google{
+    background-color: #eee;
+}
+
+
+#a04 .fastLinkContent .fastLink .iconBox{
+ display: flex;
+ flex-direction: row;
+
+} */
+
+/* 方便做隔離表示而已 */
+
+.right{
+    width: 100%;
+    height: 500px;
+    margin: 1px ;
+    background-color: lightsteelblue;
+}
