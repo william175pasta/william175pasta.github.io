@@ -1,0 +1,76 @@
+
+
+
+
+.information .inf-content{
+    font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
+    width:100%;
+    margin: 0 auto;
+    padding: 1px 0px;
+    background-color: rgb(249, 254, 255);
+}
+
+
+
+.information .inf-content h3{
+    background-color: rgb(238, 238, 238);
+    color: rgb(221, 53, 53);
+    font-size: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    
+
+}
+.information .inf-content h6{
+    font-size: 18px;
+    padding: 15px 30px;
+    font-weight: 600;
+
+}
+.information .inf-content p{
+    font-size: 16px;
+    padding: 15px 30px;
+}
+.table{
+    padding:20px;
+    margin:20px auto;
+}
+.table-content{
+    width: 100%;
+    margin:  0 auto;
+    text-align: center;
+}
+.table .table-content h5{
+    padding:10px;
+    color: red;
+    font-weight: 700;
+}
+
+.table .table-content th{
+    background-color: #ccc;
+    font-weight: 700;
+}
+
+.table .table-content td{
+    background-color: #EEE;
+}
+
+.information table{
+    margin: 10px;
+}
+@media screen and (min-width:768px){
+    .information .inf-contentall {
+        width:100%;
+        margin: 0 auto;
+    }
+    .information table{
+        border:1px solid #ccc;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin: 20px auto;
+}
+
+
+}
