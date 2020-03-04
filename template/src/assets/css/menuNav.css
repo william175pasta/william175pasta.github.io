@@ -100,7 +100,10 @@ nav a{
 }
 .chefContents p{
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
-    padding:20px;
+    padding: 10px 20px;
+    text-align: justify;
+
+
 }
 
 .chefContents h4{
@@ -114,7 +117,8 @@ nav a{
 /* Footer */
 .containerForThree{
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
-    background-color: rgb(102, 102, 102);
+    background-color: #34465d;
+
     color: #eee;
 }
 .containerForThree .footerContent{
@@ -132,10 +136,18 @@ nav a{
 .containerForThree .footerContent p,
 .containerForThree .footerContent ul{
     padding: 15px;
+    text-align: justify;
+
+}
+.containerForThree .content-form{
+    padding:20px;
+    width: 90%;
+    margin: 0 auto;
+
 }
 .containerForThree .content-form input,
 .containerForThree .content-form textarea{
-    margin-bottom: 10px;
+        margin-bottom: 10px;
         width: 100%;
         padding:5px;
         outline: none;
@@ -152,6 +164,7 @@ nav a{
     color:#eee;
     font-weight: bold;
     cursor: pointer;
+    
 }
 
 .containerForThree .content-form button:hover{
@@ -182,6 +195,12 @@ nav a{
 }
 /* 平板 以上*/
 @media screen and (min-width:768px){
+        /*縮小左右  */
+        .indexmain{
+        width: 80%;
+        margin: 0 auto;
+        }
+
         .menuBtn{
             display: none;
         }
@@ -232,12 +251,14 @@ nav a{
             padding: 30px;
         }
         .containerForThree .footerContent h4{
+            color:#eee;
             padding: 10px 5px;
         }
         .containerForThree .footerContent p,
         .containerForThree .footerContent ul,
         .containerForThree .footerContent form{
             padding-left:30px;
+            text-align: justify;
         }
         .containerForThree .footerContent ul li{
             margin-bottom: 10px;
@@ -245,11 +266,18 @@ nav a{
         .copyRight .container{
             padding:40px 20px;
         }
+
         .copyRight .container .network{
             margin-top: 0px;
             margin-bottom: 20px;
             display: flex;
             flex-direction: row;
+        }
+        .copyRight .container p{
+            font-size:13px;
+            text-align:center;
+            line-height:1.8;
+            color:#FFF;
         }
         .containerForThree .content-form button:hover{
             font-weight: 700;
@@ -258,13 +286,6 @@ nav a{
         }
        
 }
-/* 內容設定 */
-
-
-
-/* Maps */
-
-
 
 
 
