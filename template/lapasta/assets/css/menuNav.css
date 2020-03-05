@@ -104,16 +104,13 @@ nav a{
     text-align: center;
 }
 
-
 .roundImg{
     padding:0px;
     border-radius: 100px;
 }
 .roundImg:hover{
     box-shadow: 0 0 10px #34465d;
-   
-    transform: scaleX(1.1) scaleY(1.1);
-
+    transform: scaleX(1.2) scaleY(1.2);
 }
 /* chef */
 
@@ -134,17 +131,11 @@ nav a{
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
     padding: 10px 20px;
     text-align: justify;
-
-
 }
 
 .chefContents h4{
     text-align: center;
 }
-
-
-
-
 
 /* Footer */
 .containerForThree{
