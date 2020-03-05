@@ -122,6 +122,13 @@
         background-color:#34465d;
         color: #eee;
     }
+    .fontSizeeContent .fontSizeeBox a:hover{
+        color: #eee;
+        background-color: rgb(221, 53, 53); 
+        border: none;
+
+        
+    }
 
 
 }
