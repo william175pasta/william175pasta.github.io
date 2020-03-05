@@ -6,10 +6,16 @@
 
 .title{
     margin-top:1px ;
+    margin:0 auto;
+
     width: 100%;
     background-color: #34465d;
     color: #eee;
-    height: 50px;
+    
+    text-align: center;
+}
+.title h3{
+    line-height: 50px;
     text-align: center;
 }
 .chefbox{
@@ -18,9 +24,6 @@
 .chefbox:hover{
     box-shadow:0 0 6px#AAAAAA;
 }
-
-
-
 
 .chefImageBox{
     width: 100%;
@@ -39,9 +42,35 @@
     cursor: pointer;
 }
 
-
-
 .chefbox h5{
     color:#CC0000;
     font-weight: bold;
+}
+.cook span{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px){
+    /* .title{
+        transition: all 2s 0s ease;
+    }
+    .title:hover{
+        margin:0 auto;
+        color:		#FFDD55;
+        background-color: #410093;
+        width: 80%;
+    } */
+    .title:hover  h3:after{
+        color: #34465d;
+        background-color: #CCC;
+        content:'與我們聯絡';
+    }
+    .title:hover  h3:before{
+        color: #34465d;
+        background-color: #CCC;
+        content:'台北市第一';
+    }
+
 }

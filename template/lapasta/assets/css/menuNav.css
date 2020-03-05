@@ -8,8 +8,6 @@
     position: relative;
     width:100%;
     height: 50px;
-
-    
     background-color:#fff;
     color: red;
     
@@ -48,7 +46,7 @@ nav{
     top:50px;
     background-color: #34465d;
     left:-100%;
-    transition: .5s;
+    transition: .5s ease-in-out;
     z-index: 999;
 }
 nav a{
@@ -60,6 +58,22 @@ nav a{
     text-align: center;
     color: #ccc;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .foodContentAll img{
     margin-bottom: 20px;
@@ -90,6 +104,17 @@ nav a{
     text-align: center;
 }
 
+
+.roundImg{
+    padding:0px;
+    border-radius: 100px;
+}
+.roundImg:hover{
+    box-shadow: 0 0 10px #34465d;
+   
+    transform: scaleX(1.1) scaleY(1.1);
+
+}
 /* chef */
 
 .chefContent {
@@ -97,6 +122,13 @@ nav a{
     align-items:center;
     justify-content:center;
     margin: 10px auto;
+}
+.chefContent .chefImg{
+    cursor: pointer;
+    transition: all 2s 0s ease;
+}
+.chefContent .chefImg:active{
+    border-radius:100%;
 }
 .chefContents p{
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
@@ -129,8 +161,11 @@ nav a{
     cursor: pointer;
 }
 
-.containerForThree .container h4{
-    color: #34465d;
+.containerForThree h4{
+    margin-top: 10px;
+    margin-left: 10px;
+
+    color: #eee;
     font-weight: bold;
 }
 .containerForThree .footerContent p,
@@ -219,8 +254,6 @@ nav a{
             top:0;
             /* 把它背景設透明 */
             background-color: transparent;
-            
-            
         }
         .headerContent nav a{
             line-height: 10px;
@@ -229,16 +262,17 @@ nav a{
             border-bottom:none;
             color: #34465d;
             font-weight: bold;
+            transition: border-top .2s 0s ease
         }
         .headerContent nav a:hover{
-            color: #b92b27;
-            font-weight: bold;
+            color: #b92b27; 
+            border-top: 3px solid #b92b27;
+
         }
 
         .foodContentAll{
             margin-bottom: 40px;
         }
-
 
 /* footer */
         .containerForThree{
@@ -284,8 +318,33 @@ nav a{
             background-color:#eee;
             color:#b92b27;
         }
-       
+
+/* 蓋板廣告 手機沒有 */
+        #ad-content #ad{
+            position:fixed;
+            z-index: 99999;
+            width:100%;
+            height: 100%;
+            background-color: hsla(240, 0%, 50%, 0.6);
+            top:0;
+            left:0;
+            display: none;
+        }
+        #ad-content #ad img{
+            position:absolute;
+            margin: auto;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+        }
+
+
+
+
 }
+
+
 
 
 

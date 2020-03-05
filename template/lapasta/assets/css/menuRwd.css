@@ -25,10 +25,6 @@
 
 
 
-
-
-
-
 .newDishes .asideBar .title{
     text-align: center;
     background-color:#444444;
@@ -78,11 +74,11 @@
 }
 .mainBar .carboxthree .cardbox p{
     color: black;
-    transition: all 1s 0s ease;
+    transition: all .5s 0s ease;
 }
 
 .mainBar .carboxthree .cardbox p:hover{
-    color: #0077b5;
+    color: #FFBB00;
    
     
 }
@@ -105,25 +101,43 @@
     display: flex;
     justify-content: flex-end;
 }
+/* HOT特效 */
+@keyframes hot-food {
+    0%{ color: red;
+        background-color:#eee;;}
+    100%{  color:#eee;
+        background-color:red;}
+}
+.hot-div{
+    
+    position: absolute;
+    width: 20%;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: red;
+    color:#eee;
+    padding: 1px;
+    animation:  hot-food 1s infinite ease;
+}
 
-
-
-
-
+/*for 平板以上 */
 @media screen and (min-width:768px){
     .newDishes{
         display: flex;
         flex-direction: row;
     }
     .main{
-      
         margin:20px auto;
     }
     .cardbox{
+        position: relative;
         display: flex;
         align-items: stretch;
     }
-  
+    .cardbox .card:hover{
+        box-shadow: 0 -5px 8px -5px  red;
+    }
 }
 
 
