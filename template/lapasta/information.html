@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <div class="container-fluid p-0 ">
+        <div class="container-fluid p-0">
             <div class="indexmain">
                 <input type="checkbox" id="menuControl">
                 <div class="headerContent">
@@ -27,13 +27,13 @@
                         <img src="./assets/img/logo/regHotels.jpg" style="width: 55%;">
                     </div>
                     <label for="menuControl" class="menuBtn">
-                        <img class="menuBtnImg" src="./assets/img/picColor/BTN.png">
+                        <img class="menuBtnImg" src="./assets/img/logo/BTN.png">
                     </label>
                     <nav>
                         <a href="./index.html">Home</a>
                         <a href="./menu.html">Menu</a>
                         <a href="./information.html">Information</a>
-                        <a href="#table">PriceList</a>
+                        <a href="./chef.html">Chef</a>
                     </nav>
                 </div>
                 <div class="row .no-gutters">
@@ -42,11 +42,21 @@
                     </div>
                 </div>
 
-                <div class="container-fluid p-0  information">
+                <div class="container-fluid p-0  information" id="informationBox">
                     <div class="row  inf-contentall">
                         <div class="col-12 inf-content maps">
-                            <h3>餐廳地點</h3>
-                            <h6>地址</h6>
+                            <div class="mapsBtn">
+                                <h3>餐廳地點</h3>
+                                <a id="mapsBtn" href="#footer">地圖位置</a>
+                            </div>
+                            <div class="fontSizeeContent">
+                                <h6>地址</h6>
+                                <div class="fontSizeeBox">
+                                    <a href="#" id="big">大</a>
+                                    <a href="#" id="mid">中</a>
+                                    <a href="#" id="small">小</a>
+                                </div>
+                            </div>
                             <p>台北市大同區南京西路25巷4-3號
                             </p>
                             <h6>交通方式</h6>
@@ -76,7 +86,7 @@
                         <div class="col-12 table" id="table">
                             <div class="table-content">
                                 <h5>
-                                    餐飲營業時間價目表
+                                    營業時間與價格
                                 </h5>
                                 <table>
                                     <tr>
@@ -102,6 +112,7 @@
                                 </table>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -117,12 +128,10 @@
                                     在台灣（天母、內湖、南西）及上海共有8個據點。
                                     持續拓展與服務更多喜愛LA PASTA的朋友們。
                                 </p>
-
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.216924620721!2d121.51959462778096!3d25.053280383366364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99c0ac0aa2f%3A0xe8d1f8b3f5e4a058!2zTGEgUGFzdGEg576p6bq15bGLIOWNl-ilv-W6lw!5e0!3m2!1szh-TW!2stw!4v1583303157756!5m2!1szh-TW!2stw"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4210956062007!2d121.51810971484223!3d25.053712883963154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99c0ac0aa2f%3A0xe8d1f8b3f5e4a058!2zTGEgUGFzdGEg576p6bq15bGLIOWNl-ilv-W6lw!5e0!3m2!1szh-TW!2stw!4v1583371067547!5m2!1szh-TW!2stw"
                                     width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="">
                                 </iframe>
-
                             </div>
                             <div class="footerMid footerContent">
                                 <h4>分店連結</h4>
@@ -167,7 +176,7 @@
 
 
 
-
+        <script src="./assets/js/fontSize.js"></script>
 
     </body>
 
