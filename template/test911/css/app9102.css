@@ -1,0 +1,168 @@
+/* 主圖 */
+.main{
+    margin:40px;
+    font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
+}   
+.main .user-description a{
+    color:#00BBFF ;
+    text-decoration: none;
+}
+/* 頭部 */
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px ;
+}
+.title{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-bottom:20px ;
+}
+.title h3{
+    font-weight: bold;
+    border-left: 2px solid black;
+    padding-left: 5px;
+}
+.yellowbox{
+    padding:10px;
+    border: 1px solid#FFAA33;
+    background-color:#FFEE99;
+}
+
+/* tap-content */
+.content-main .tap-all{
+    box-shadow: 0 0 5px #ddd;
+}
+.content-main .tap{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height:50px ;
+}
+.content-main .tap a{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    padding: 10px 10px 5px 10px;
+    color: 	#DDDDDD;
+}
+.content-main .tap a:hover{
+    border-bottom: 3px solid #444444 ;
+    color: 	#444444;
+
+}
+.content-main .text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 5px #DDD;
+    border-top: 1px solid #ccc;
+}
+/* card-content */
+.content-main .text .text-card{
+    padding: 20px;;
+    width: 25%;
+}
+
+
+#card-img{
+    width: 100%;
+    box-shadow: 0 0 10px #778899;
+    margin-bottom: 20px;
+}
+
+.content-main .text .text-card p{
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* text-content */
+
+.content-main .text .text-content{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 75%;
+}
+
+
+
+.text .text-content .upgrade h3{
+    font-size: 20px;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+.text .text-content .upgrade p{
+    margin-bottom: 10px;
+}
+.text .text-content .upgrade p:nth-child(2){
+    color: grey;
+}
+
+.text .text-content .time h3{
+    margin-top: 30px;
+
+    font-size: 20px;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+
+
+
+.hr{
+    margin:30px auto;
+}
+
+.content-main .text .text-content .upgrade h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* tap */
+.content-main .tap2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height:50px ;
+    border-top: 1px solid #ddd;
+
+}
+.content-main .tap2 a{
+    
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    padding: 7px;
+    color: 	#DDDDDD;
+    border: 1.5px solid #AAA;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.content-main .tap2 a:hover{
+    color:#00BBFF ;
+    border: 1.5px solid #00BBFF ;
+
+}
+
+/* text upgrade-user */
+
+.content-main .text .text-content .upgrade-user .box{
+    margin-bottom:25px;
+} 
+.upgrade-user .box h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;;
+}
+.upgrade-user .box p{
+    margin-bottom: 5px;;
+
+}
