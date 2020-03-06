@@ -117,10 +117,48 @@
 }
 
 .money p{
-    padding-bottom:7px ;
-    border-bottom: 6px solid	#D3D3D3;
-    border-radius: 2px;
+
 }
+/* bigbox */
+.bigbox{
+    margin-top: 20px;
+}
+.box1{
+    box-shadow: 0 0 5px #778899;
+
+    position: relative;
+    width: 500px;
+    height: 5px;
+    background-color: grey;
+}
+.box2{
+    position: absolute;
+    width:100px;
+    height: 5px;
+    top:0;
+    left: 0;
+    background-color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .money:hover p:before{
     content:" ";
