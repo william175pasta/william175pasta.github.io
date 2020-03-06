@@ -221,7 +221,7 @@ const FingerGame = () => {
                 <Button size="lg" variant="outline-success" onClick={clearBTN} style={{ display: 'block', margin: '0 auto' }}>
                     重新下注
                 </Button>
-                <h4 style={{ textAlign: 'end' }}>結果:{result}</h4>
+                <h4 style={{ textAlign: 'end', color: '	#40E0D0', fontWeight: '700' }}>結果:{result}</h4>
                 <Button size="lg" variant="outline-danger" onClick={resulthBTN} style={{ display: 'block', margin: '0 auto' }}>
                     重新開始
                 </Button>
