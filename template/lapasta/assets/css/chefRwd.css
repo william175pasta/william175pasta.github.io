@@ -41,17 +41,8 @@
 .chefImageBox{
     cursor: pointer;
 }
-#popover01{
-    position:fixed;
-    z-index: 99999;
-    min-width:100%;
-    height: 100%;
-    background-color: hsla(240, 0%, 50%, 0.6);
-    top:0;
-    left:0;
-    display: none;
-}
-#popover02{
+/* popoverbox */
+.popoverbox{
     position:fixed;
     z-index: 99999;
     min-width:100%;
@@ -72,9 +63,10 @@
     left: 0;
     right: 0;
     width:80%;
-    height: 75%;
+    height: 80%;
     margin:auto;
-    background-color:#eee;
+    background-size: cover;
+    background-image: url(../img/rooms/room07.jpg);
 
 }
 .popover-text .popover-box-btn{
@@ -92,10 +84,11 @@
 
 .popover-text h4{
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 2px;
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid	#444444;
+    color: #fff;
 }
 .popover-text  ul{
     list-style: none;
@@ -104,11 +97,60 @@
     padding:10px;
     border-bottom: 1px solid	#AAAAAA;
     letter-spacing: 2px;
+
 }
-.popover-text  span{
-    color: red;
-    font-weight: 700;
+
+.popover-chef-content{
+    font-weight: bold;
+    color: #eee;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
 }
+.popover-chef-content-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.chef-name{
+    text-align: center;
+    width: 65%;
+}
+.chef-images{
+    text-align: center;
+    width: 35%;
+}
+.popover-chef-content-images{
+    width: 50%;
+}
+
+.popover-chef-content-experience li,
+.popover-chef-content-skill li{
+    display: inline-block;
+}
+.popover-chef-content h5{
+    font-weight: bold;
+    color:#FF4500 ;
+}
+.popover-chef-content span{
+    font-size: 22px;
+    color:	#DC143C;
+   
+}
+.popover-chef-content-experience{
+    margin-left:30px;
+}
+
+.popover-chef-content-skill{
+    margin-left:30px;
+
+}
+
+
+
+
 
 @media screen and (min-width:768px){
     .title:hover  h3:after{
@@ -131,13 +173,64 @@
         bottom: 0;
         left: 0;
         right: 0;
-        width:30%;
-        height: 60%;
+        width:50%;
+        height: 66%;
         margin:auto;
-        background-color:#eee;
-
+        background-size: cover;
+        background-image: url(../img/rooms/room07.jpg);
+        
+        color:#AAAAAA;
     }
-   
+    .popover-chef-content{
+        font-weight: bold;
+        color: #eee;
+        width: 100%;
+        padding: 10px;
+    }
+    .popover-chef-content-header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .chef-name{
+        text-align: center;
+        width: 65%;
+    }
+    .chef-images{
+        text-align: center;
+        width: 40%;
+    }
+    .popover-chef-content-images{
+        width: 50%;
+    }
+    
+    .popover-chef-content-experience li,
+    .popover-chef-content-skill li{
+        display: inline-block;
+    }
+    .popover-chef-content h5{
+        font-weight: bold;
+        color:#FF4500 ;
+        
+    }
+    .popover-chef-content span{
+        font-size: 22px;
+        color:	#DC143C;
+    }
+    .popover-chef-content-experience,
+    .popover-chef-content-skill{
+    margin-left:30px;
+    }
+
+
+
+    
+
+
+
+
 
 
 }
