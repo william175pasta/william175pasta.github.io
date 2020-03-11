@@ -1,16 +1,23 @@
 
 /* Header裡NAV設定 */
-.container-fluidIP{
-    padding-right:0;
-    padding-left: 0;
-}
-.headerContent{
+
+.header-img-box{
+    width: 100%;
     position: relative;
+    top:60px;
+}
+
+.headerContent{
     width:100%;
     height: 50px;
-    background-color:#fff;
     color: red;
-    
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background-color:#fff;
+    z-index: 9;
+    justify-content: space-between;
 }
 .logo{
     width: 150px;
@@ -33,7 +40,7 @@
 .menuBtn {
     position: absolute;
     top:10px;
-    right: 10px;
+    right: 20px;
 }
 #menuControl:checked ~ .headerContent nav{
     left:0;
@@ -47,7 +54,7 @@ nav{
     background-color: #34465d;
     left:-100%;
     transition: .5s ease-in-out;
-    z-index: 999;
+    z-index: 9;
 }
 nav a{
     display: block;
@@ -72,9 +79,12 @@ nav a{
 /* titleContne */
 .titleContne{
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
-    margin: 30px auto;
+    margin: 50px auto 10px;
     text-align: center;
   
+}
+.titleContne-title{
+    margin-top:20px;
 }
 .titleContne .titleContne-text{
     padding: 10px 20px;
@@ -206,14 +216,15 @@ nav a{
     color: #eee;
 }
 .copyRight .container .network a{
-    margin:10px auto;
+    margin:5px;
     display: inline-block;
     color: #eee;
 
 }
 .copyRight .container .network {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
 .copyRight .container p{
     text-align: center;
@@ -230,18 +241,24 @@ nav a{
             display: none;
         }
         .headerContent{
+            width: 100%;
             display: flex;
-            justify-content: space-between;
+        }
+        .logo{
+            margin-left: 10%;
+
         }
         .headerContent nav{
+            width: 100%;
             position: relative;
             left : 0;
             display: flex;
             width:auto;
             height: auto;
             flex-direction: row;
-            margin-right: 50px;
+            margin-right: 10%;
             top:0;
+            
             /* 把它背景設透明 */
             background-color: transparent;
         }
