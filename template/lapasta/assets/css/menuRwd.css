@@ -8,10 +8,14 @@
 .newDishes{
     display: flex;
     flex-direction: column;
-
+   padding:0 10px;
 }
 .asideBar{
+    position: relative;
     margin-top: 15px;
+    height: 580px;
+   
+    
 }
 .mainBar{
     margin-top: 15px;
@@ -19,32 +23,36 @@
 }
 
 .openmainBar{
-   
+
     display: block;
 }
 
 
-
-.newDishes .asideBar .title{
+.newDishes .asideBar .title1{
+    background-color:	#f8efea;
     text-align: center;
-    background-color:#444444;
-    color:  #FFFFFF;
 }
-.newDishes .asideBar .title h4{
+.newDishes .asideBar .title2{
+  
+    background-color:	 #f8efea;
+
+    text-align: center;
+}
+.newDishes .asideBar h4{
+    color:	#FF3333; 
     height:40px;
     line-height:40px
 }
 .menubox{
     width: 100%;
+    margin-bottom: 20px;
 }
+
 .menubox ul li{
     text-align: center;
     padding: 0;
     /* transition: all .3s 0s ease; */
 }
-
-
-
 .menubox ul li a{
     padding: 12px;
     display: block;
@@ -52,9 +60,20 @@
     text-align: center;
 }
 
+
+
+
 .menubox ul li:hover{
-    background-color:	#DDDDDD;
+    background-color:#CCEEFF;
 }
+.menubox ul li a:hover{
+    color: red;
+    font-weight: 700;
+}
+
+
+
+
 
 
 
@@ -138,96 +157,23 @@
     .cardbox .card:hover{
         box-shadow: 0 -5px 8px -5px  red;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .main{
-    margin-top: 20px;
-    width: 80%;
-    background-color: rosybrown;
-    margin: 0 auto;
-}
-.newDishes{
-    width: 100%;
-    height: auto;
-  display: flex;
-  flex-direction: row;
-}
-.menubox{
-    display: flex;
-    height: 300px;
-    width: 18rem;
-    height: auto;
-}
-
-
-
-.main .asideBar{
-    width: 100%;
-    color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top:20px;
-
-
-}
-.main .mainBar{
-    width: 100%;
-    background-color: #aaa;
-    color: rebeccapurple;
-    margin-top:20px;
-}
-.mainBar .carboxthree{
-    margin:20px 0;
-}
-
-.mainBar .cardbox{
-    width:33%;
+    .menubox{
+        width: 80%;
+        margin-bottom: 20px;
+    }
     
-    margin:0;
-}
+    .newDishes .aside01{
+        position: absolute;
+        right: 0;
+     
+    }
+    .newDishes .aside02{
+            position: absolute;
+            right: 0;
+            top:280px; 
+    }
+    .newDishes .asideBar h4{
+        font-weight: bold;
+    }
 
-.mainBar .cardbox .card{
-    width:100%
-} */
+}
