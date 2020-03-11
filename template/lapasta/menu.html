@@ -11,7 +11,9 @@
         <link rel="stylesheet" href="./assets/css/rest.css">
         <link rel="stylesheet" href="./assets/css/menuNav.css">
         <link rel="stylesheet" href="./assets/css/menuRwd.css">
-
+        <!-- i-con -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity="sha384–5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -24,28 +26,32 @@
         <div class="container-fluid p-0 ">
             <div class="indexmain">
                 <!-- header -->
-                <div>
-                    <input type="checkbox" id="menuControl">
-                    <div class="headerContent">
-                        <div class="logo">
-                            <a href="./index.html"><img src="./assets/img/logo/regHotels.jpg" style="width: 55%;"></a>
-                        </div>
-                        <label for="menuControl" class="menuBtn">
-                            <img class="menuBtnImg" src="./assets/img/logo/BTN.png">
-                        </label>
-                        <nav>
-                            <a href="./index.html">Home</a>
-                            <a href="./menu.html">Menu</a>
-                            <a href="./information.html">Information</a>
-                            <a href="./chef.html">Chef</a>
-                        </nav>
+
+                <input type="checkbox" id="menuControl">
+                <div class="headerContent">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./assets/img/logo/regHotels.jpg"
+                                style="width: 55%; height: 50px;"></a>
                     </div>
-                    <div class="row .no-gutters">
-                        <div class="col-12">
-                            <img src="./assets/img/header/pasta.jpeg" style="width: 100%;">
-                        </div>
+                    <label for="menuControl" class="menuBtn">
+                        <img class="menuBtnImg" src="./assets/img/logo/BTN.png">
+                    </label>
+                    <nav>
+                        <a href="./index.html">Home</a>
+                        <a href="./menu.html">Menu</a>
+                        <a href="./information.html">Information</a>
+                        <a href="./chef.html">Chef</a>
+                    </nav>
+                </div>
+
+
+
+                <div class="row .no-gutters titleContne">
+                    <div class="col-12">
+                        <img src="./assets/img/header/pasta.jpeg" style="width: 100%;">
                     </div>
                 </div>
+
 
                 <!-- constent -->
                 <div class="container-fluid p-0">
@@ -54,9 +60,23 @@
                     <div class="main">
                         <div class="row newDishes">
                             <div class="col-12 col-md-4 asideBar">
-                                <div class="card menubox">
-                                    <div class="title">
-                                        <h4>MENU</h4>
+
+                                <div class="card menubox aside01">
+                                    <div class="title1">
+                                        <h4>套餐</h4>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="#" id="menu04">商業午餐 </a></li>
+                                        <li class="list-group-item"><a href="#" id="menu05">XL套餐 </a></li>
+                                        <li class="list-group-item"><a href="#" id="menu06">輕食餐 </a></li>
+                                        <li class="list-group-item"><a href="#" id="menu07">兒童餐 </a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="card menubox aside02">
+                                    <div class="title2">
+                                        <h4>單點</h4>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><a href="#" id="menu00">義大利麵 Pasta</a></li>
@@ -65,6 +85,7 @@
                                         <li class="list-group-item"><a href="#" id="menu03">飲料 Drink</a></li>
                                     </ul>
                                 </div>
+
                             </div>
 
                             <div class="col-12 col-md-8 mainBar openmainBar" id="mainBar00">
@@ -208,10 +229,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-
                             <div class="col-12 col-md-8 mainBar" id="mainBar01">
                                 <div class="row carboxthree">
                                     <div class="col-12 col-md-4 cardbox">
@@ -399,9 +416,216 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 col-md-8 mainBar " id="mainBar04">
+                                <div class="row carboxthree">
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/lunch/lunch01.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">商業午餐1</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/lunch/lunch02.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">商業午餐2</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/lunch/lunch03.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">商業午餐3</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 mainBar " id="mainBar05">
+                                <div class="row carboxthree">
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/xlset/xl01.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">XL01</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/xlset/xl02.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">XL02</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/xlset/xl03.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">XL03</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
+
+                            <div class="col-12 col-md-8 mainBar " id="mainBar06">
+                                <div class="row carboxthree">
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/lightfood/lighfood01.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">輕食01</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/lightfood/lighfood02.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">輕食02</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/lightfood/lighfood03.jpg" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">輕食03</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-12 col-md-8 mainBar " id="mainBar07">
+                                <div class="row carboxthree">
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/kidd/kid03.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">兒童餐01</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/kidd/kid04.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">兒童餐02</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 cardbox">
+                                        <div class="card">
+                                            <img src="./assets/img/set/kidd/kid05.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">兒童餐03</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                                <div class="btnbox">
+                                                    <a href="#" class="btn btn-primary">價格</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -455,20 +679,40 @@
 
 
 
-
                         <div class="copyRight">
-
                             <div class="container">
                                 <div class="network">
-                                    <a href="#">Facebook</a>
-                                    <a href="#">Instagram</a>
-                                    <a href="#">GitHub</a>
+                                    <a href="#">
+                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                            <i class="fab fa-google-plus-square"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                            <i class="fab fa-github-square"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                            <i class="fab fa-instagram"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </span>
+                                    </a>
                                 </div>
                                 <p>
-                                    William Wei© Mobile Web @ 2020
+                                    Responsive Web Design 2020
                                 </p>
                                 <p>
-                                    Responsive Web Design 2020
+                                    Copyright © 2020 William
                                 </p>
                             </div>
                         </div>
