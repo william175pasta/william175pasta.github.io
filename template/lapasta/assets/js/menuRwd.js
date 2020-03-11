@@ -1,6 +1,6 @@
 // 改變menu 顯示 哪一個區塊
 function showMainBox(e) {
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 8; i++) {
         document.querySelector('#mainBar0' + i).classList.remove('openmainBar')
     }
     var n = this.id.substring(5);
@@ -8,6 +8,6 @@ function showMainBox(e) {
     e.preventDefault();
 }
 
-for (var i = 0; i < 4; i++) {
+for (var i = 0; i < 8; i++) {
     document.querySelector('#menu0' + i).addEventListener('click', showMainBox);
 }
