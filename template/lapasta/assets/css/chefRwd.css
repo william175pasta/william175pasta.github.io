@@ -186,20 +186,20 @@
     margin-left:30px;
 
 }
+/* #chef01 h6{
+    color: rgba(255,0,0,0.3);
+    position: absolute;
+    font-weight: 700;
+    top:15px;
+    right: 10px;
+    transform:rotate(10deg);
+} */
 
 
 @media screen and (min-width:768px){
    
     /* 主廚右上角五顆星 效果*/
-    #chef01 h6{
-        color: rgba(255,0,0,0.3);
-        position: absolute;
-        font-weight: 700;
-        top:15px;
-        right: 10px;
-        transform:rotate(10deg);
-    }
-
+    
     .title:hover  h3:after{
         content:"★★★";
         width: 50px;
