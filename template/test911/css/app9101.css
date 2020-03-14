@@ -7,6 +7,13 @@
     color:#00BBFF ;
     text-decoration: none;
 }
+
+.close{
+    display: none;
+}
+.open{
+    display:block;
+}
 /* 頭部 */
 .header{
     display: flex;
@@ -116,9 +123,8 @@
     width: 100%;
 }
 
-.money p{
 
-}
+
 /* bigbox */
 .bigbox{
     margin-top: 20px;
@@ -221,13 +227,6 @@
     margin-left: 25px;
 }
 
-
-.content-main .tap2 a:hover{
-  
-    color:#00BBFF ;
-    border: 1.5px solid #00BBFF ;
-
-}
 
 
 .text .text-content .user h3{

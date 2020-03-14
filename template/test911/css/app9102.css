@@ -2,7 +2,9 @@
 .main{
     margin:40px;
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
-}   
+}  
+
+
 .main .user-description a{
     color:#00BBFF ;
     text-decoration: none;
@@ -146,11 +148,6 @@
     margin-left: 25px;
 }
 
-.content-main .tap2 a:hover{
-    color:#00BBFF ;
-    border: 1.5px solid #00BBFF ;
-
-}
 
 /* text upgrade-user */
 
