@@ -69,18 +69,57 @@
     background-image: url(../img/rooms/room07.jpg);
 
 }
+
 .popover-text .popover-box-btn{
     text-align: center;
+    line-height: 30px;
+    margin: auto;
     width: 30px;
     height: 30px;
     position: absolute;
     top:0;
     right:0;
-    padding: 5px;
-    background-color: red;
+    background-color: rgba(0,0,0,0.0);
     color:#EEE;
     cursor: pointer;
 }
+.popover-text .popover-box-btn:hover{
+    animation: loading 0.5s infinite ease;
+}
+
+  /* 小圈圈旋轉 */
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+        /* transform: scaleX(1.1); */
+
+    }
+    25%{
+        transform: rotate(90deg);
+
+    }
+    50%{
+        transform: rotate(180deg);
+
+        /* transform: scaleX(2); */
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+        /* transform: scaleX(1); */
+    }
+}
+
+.scale{
+    transform:(scale(1.5, 1.5));
+}
+
+
+
+
 
 .popover-text h4{
     font-weight: bold;
@@ -149,19 +188,31 @@
 }
 
 
-
-
-
 @media screen and (min-width:768px){
+   
+    /* 主廚右上角五顆星 效果*/
+    #chef01 h6{
+        color: rgba(255,0,0,0.3);
+        position: absolute;
+        font-weight: 700;
+        top:15px;
+        right: 10px;
+        transform:rotate(10deg);
+    }
+
     .title:hover  h3:after{
+        content:"★★★";
+        width: 50px;
         color: #34465d;
-        background-color: #CCC;
-        content:'與我們聯絡';
+        padding: 5px;
+        background-color: #EEE;
     }
     .title:hover  h3:before{
+        content:"★★★";
+        width: 50px;
         color: #34465d;
-        background-color: #CCC;
-        content:'台北市第一';
+        padding: 5px;
+        background-color: #EEE;
     }
 
     .popover-text{
@@ -178,7 +229,6 @@
         margin:auto;
         background-size: cover;
         background-image: url(../img/rooms/room07.jpg);
-        
         color:#AAAAAA;
     }
     .popover-chef-content{
@@ -223,13 +273,6 @@
     .popover-chef-content-skill{
     margin-left:30px;
     }
-
-
-
-    
-
-
-
 
 
 
