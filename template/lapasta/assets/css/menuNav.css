@@ -6,7 +6,6 @@
     position: relative;
     top:60px;
 }
-
 .headerContent{
     width:100%;
     height: 50px;
@@ -75,6 +74,12 @@ nav a{
 .foodContentAll img{
     margin-bottom: 20px;
 }
+.foodContentAll .foodContent h3 + p{
+    cursor: pointer;
+    color: #34465d;
+}
+
+
 
 /* titleContne */
 .titleContne{
@@ -96,14 +101,10 @@ nav a{
 
 
 /* foodContentAll */
-
-
 .foodContentAll{
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
     margin: 30px auto;
 }
-
-
 .foodContentAll .foodContent p{
     padding: 10px 20px;
 }
@@ -114,10 +115,15 @@ nav a{
 .roundImg{
     padding:0px;
     border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #34465d;
 }
 .roundImg:hover{
-    box-shadow: 0 0 10px #34465d;
-    transform: scaleX(1.2) scaleY(1.2);
+    box-shadow: 0 0 12px		#4682B4;
+    animation-direction:reverse;
+    /* box-shadow: 0 0 10px #34465d; */
+    /* transform: scaleX(1.2) scaleY(1.2); */
+    animation:test 0.5s 1 ease;
 }
 /* chef */
 
@@ -148,7 +154,6 @@ nav a{
 .containerForThree{
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
     background-color: #34465d;
-
     color: #eee;
 }
 .containerForThree .footerContent{
@@ -165,7 +170,6 @@ nav a{
 .containerForThree h4{
     margin-top: 10px;
     margin-left: 10px;
-
     color: #eee;
     font-weight: bold;
 }
@@ -229,6 +233,7 @@ nav a{
 .copyRight .container p{
     text-align: center;
 }
+
 /* 平板 以上*/
 @media screen and (min-width:768px){
         /*縮小左右  */
@@ -236,7 +241,6 @@ nav a{
         width: 80%;
         margin: 0 auto;
         }
-
         .menuBtn{
             display: none;
         }
@@ -246,7 +250,6 @@ nav a{
         }
         .logo{
             margin-left: 10%;
-
         }
         .headerContent nav{
             width: 100%;
@@ -274,9 +277,8 @@ nav a{
         .headerContent nav a:hover{
             color: #b92b27; 
             border-top: 3px solid #b92b27;
-
         }
-
+        
         .foodContentAll{
             margin-bottom: 40px;
         }
@@ -307,7 +309,6 @@ nav a{
         .copyRight .container{
             padding:40px 20px;
         }
-
         .copyRight .container .network{
             margin-top: 0px;
             margin-bottom: 20px;
@@ -325,6 +326,7 @@ nav a{
             background-color:#eee;
             color:#b92b27;
         }
+
 
 /* 蓋板廣告 手機沒有 */
         #ad-content #ad{
@@ -346,7 +348,40 @@ nav a{
             left:0;
         }
 
+        /* 主廚圖片陰影 效果*/
+        .images-boxhadow{
+            position: relative;
+            width: 100%;
+        }
+        .images-boxhadow:after {
+            content:'';
+            width: 50%;
+            position: absolute;
+            bottom:120px;
+            height: 50px;
+            right: 130px;
+            box-shadow: 100px 0 10px 90px rgba(0,0,0,0.2);
+            z-index:-1;
+            /* skew傾斜 */
+            transform: skew(-35deg);
+        }
+        .images-boxhadow .chefImg{
+            width: 100%;
+            
+        }
 
+        @keyframes test{
+            0%{
+            transform:scale(1,1);
+            }
+
+            50%{
+                transform:scale(0.5,0.5);
+            }
+            100%{
+                transform:scale(1.1,1.1);
+            }
+        }
 
 
 }
