@@ -210,7 +210,7 @@ nav a{
     background-color:#eee;
     color:#b92b27;
 }
-.footer{
+#footer{
     display: flex;
     flex-direction: column;
 }
@@ -218,6 +218,7 @@ nav a{
 .copyRight{
     background-color: #333;
     color: #eee;
+
 }
 .copyRight .container .network a{
     margin:5px;
@@ -233,7 +234,10 @@ nav a{
 .copyRight .container p{
     text-align: center;
 }
-
+.copyRight .container .footer-p{
+    
+    padding-bottom: 20px;
+}
 /* 平板 以上*/
 @media screen and (min-width:768px){
         /*縮小左右  */
@@ -326,7 +330,9 @@ nav a{
             background-color:#eee;
             color:#b92b27;
         }
-
+        .copyRight .container .footer-p{
+            padding-bottom: 0px;
+        }
 
 /* 蓋板廣告 手機沒有 */
         #ad-content #ad{
