@@ -1,0 +1,141 @@
+
+
+
+
+.information .inf-content{
+    font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
+    width:100%;
+    margin: 0 auto;
+    padding: 1px 0px;
+    background-color: rgb(249, 254, 255);
+}
+
+
+
+.information .inf-content h3{
+    background-color: rgb(238, 238, 238);
+    color: rgb(221, 53, 53);
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.information .inf-content .mapsBtn{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#mapsBtn{
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 90px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color:white ;
+    background-color: rgb(221, 53, 53); 
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .5s 0s ease;
+}
+#mapsBtn:hover{
+   
+    color:#eee;
+    background-color : #34465d;
+
+    
+}
+.information .inf-content h6{
+    padding: 15px 30px;
+    font-weight: 600;
+
+}
+.information .inf-content p{
+    padding: 15px 30px;
+}
+.table{
+    padding:20px;
+    margin:20px auto;
+}
+.table-content{
+    font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
+    width: 100%;
+    margin:  0 auto;
+    text-align: center;
+}
+.table .table-content h5{
+    padding:10px;
+    color: red;
+    font-weight: 700;
+    letter-spacing: 5px;
+
+}
+
+.table .table-content th{
+    background-color: #ccc;
+    font-weight: 700;
+}
+
+.table .table-content td{
+    background-color: #EEE;
+}
+
+.information table{
+    margin: 10px;
+    box-shadow: 0 0 5px #ddd;
+}
+.fontSizeeBox{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .information .inf-contentall {
+        width:100%;
+        margin: 0 auto;
+    }
+    .information table{
+        border:1px solid #ccc;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .fontSizeeContent{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fontSizeeContent .fontSizeeBox{
+        font-size: 14px;
+        margin: 0 10px;
+        display: block;
+    }
+    .fontSizeeContent .fontSizeeBox a{
+        border-radius: 2px;
+        border: 1px solid black;
+        padding:5px;
+        margin-right: 10px;
+        text-decoration: none;
+        background-color:#34465d;
+        color: #eee;
+    }
+    .fontSizeeContent .fontSizeeBox a:hover{
+        color: #eee;
+        background-color: rgb(221, 53, 53); 
+        border: none;
+
+        
+    }
+
+
+}
+
+#informationBox{
+  
+}
