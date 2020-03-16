@@ -9,15 +9,6 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import img from '../../images/header/pasta.jpeg';
 
-const apple = {
-    size: 10,
-    name: 60,
-    age: 55,
-};
-let arry;
-arry = _.keys(apple);
-console.log('arry : ', arry);
-
 const a11yProps = index => {
     return {
         id: `simple-tab-${index}`,
@@ -25,10 +16,9 @@ const a11yProps = index => {
     };
 };
 export const routesData = [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/About' },
-    { label: 'WorksPage', path: '/Works' },
-    { label: 'Active', path: '/Active' },
+    { label: '關於我', path: '/' },
+    { label: '私房菜', path: '/About' },
+    { label: '工作經驗', path: '/Works' },
 ];
 
 const Header = props => {
@@ -41,7 +31,6 @@ const Header = props => {
     };
     return (
         <header>
-            <img src={img} style={{ width: '100%' }} />
             <AppBar position="static">
                 <Grid item xs={12}>
                     <Paper>

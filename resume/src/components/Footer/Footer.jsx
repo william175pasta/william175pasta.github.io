@@ -12,8 +12,11 @@ const useStyles = makeStyles(theme => ({
     root: {
         textAlign: 'center',
         fontSize: '14px',
-        padding: '50px 0 0',
-        margin: '50px 0 0',
+        padding: '10px',
+        position: 'fixed',
+        left: 0,
+        bottom: 0,
+        width: '100%',
     },
     list: {
         listStyleType: 'none',
@@ -65,9 +68,6 @@ const Footer = props => {
                         </li>
                     </Grid>
                 </Grid>
-                {/* <div className={classes.root}
-					style={{ height: 240, backgroundImage: `url(${footer2})` }}>
-				</div> */}
             </div>
         </footer>
     );
