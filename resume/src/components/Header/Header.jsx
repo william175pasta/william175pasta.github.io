@@ -7,25 +7,25 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import img from '../../images/header/pasta.jpeg';
 
-const a11yProps = index => {
-    return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
-    };
-};
 export const routesData = [
-    { label: '關於我', path: '/' },
-    { label: '私房菜', path: '/About' },
+    { label: '關於我', path: '/About' },
+    { label: '私房菜', path: '/MainDish' },
     { label: '工作經驗', path: '/Works' },
 ];
 
 const Header = props => {
     const [value, setValue] = React.useState(0);
     const history = useHistory();
+    const a11yProps = index => {
+        return {
+            id: `simple-tab-${index}`,
+            'aria-controls': `simple-tabpanel-${index}`,
+        };
+    };
     const handleChange = (event, newValue) => {
         const route = routesData[newValue];
+        console.log('handleChange:', newValue);
         setValue(newValue);
         history.push(route.path);
     };

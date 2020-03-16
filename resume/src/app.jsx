@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import HomePage from './views/HomePage';
 import AboutPage from './views/AboutPage';
+import MainDishPage from './views/MainDishPage';
 import WorksPage from './views/WorksPage';
 
 import TableForBacil from './components/Content/AboutComponents/TableForBacil';
@@ -18,6 +19,7 @@ const App = props => {
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/About" component={AboutPage} />
+                <Route path="/MainDish" component={MainDishPage} />
                 <Route path="/Works" component={WorksPage} />
                 <Route path="/TableForBacil" component={TableForBacil} />
                 <Route path="/TableForCream" component={TableForCream} />

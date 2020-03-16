@@ -3,16 +3,16 @@ import Grid from '@material-ui/core/Grid';
 import Slider from 'react-slick';
 
 const imagesArray = [
-    { imageUrl: './img/product/Tomato01.jpg', desc: '茄汁牛肉丸義大利麵' },
-    { imageUrl: './img/product/Tomato02.jpg', desc: '茄汁海鮮義大利麵' },
-    { imageUrl: './img/product/Tomato03.jpg', desc: '波隆那肉醬義大利麵' },
-    { imageUrl: './img/product/Cream01.jpg', desc: '奶油培根斜管麵' },
-    { imageUrl: './img/product/Cream02.jpg', desc: '奶油南瓜貝殼麵' },
-    { imageUrl: './img/product/Cream03.jpg', desc: '奶油鮭魚義大利麵' },
-    { imageUrl: './img/product/Basil01.jpg', desc: '青醬雞肉斜管麵' },
-    { imageUrl: './img/product/Basil02.jpg', desc: '青醬蛤蜊義大利麵' },
-    { imageUrl: './img/product/Olive01.jpg', desc: '蒜香白酒蛤蜊義大利麵' },
-    { imageUrl: './img/product/Olive02.jpg', desc: '起士雞肉義大利麵' },
+    { imageUrl: '../../../images/product/Tomato01.jpg', desc: '茄汁牛肉丸義大利麵' },
+    { imageUrl: '../../../images/product/Tomato02.jpg', desc: '茄汁海鮮義大利麵' },
+    { imageUrl: '../../../images/product/Tomato03.jpg', desc: '波隆那肉醬義大利麵' },
+    { imageUrl: '../../../images/product/Cream01.jpg', desc: '奶油培根斜管麵' },
+    { imageUrl: '../../../images/product/Cream02.jpg', desc: '奶油南瓜貝殼麵' },
+    { imageUrl: '../../../images/product/Cream03.jpg', desc: '奶油鮭魚義大利麵' },
+    { imageUrl: '../../../images/product/Basil01.jpg', desc: '青醬雞肉斜管麵' },
+    { imageUrl: '../../../images/product/Basil02.jpg', desc: '青醬蛤蜊義大利麵' },
+    { imageUrl: '../../../images/product/Olive01.jpg', desc: '蒜香白酒蛤蜊義大利麵' },
+    { imageUrl: '../../../images/product/Olive02.jpg', desc: '起士雞肉義大利麵' },
 ];
 
 const ImageCarouselTwo = () => {
