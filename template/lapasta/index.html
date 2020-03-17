@@ -26,9 +26,9 @@
     <body>
 
         <div class="container-fluid p-0">
-
             <div class="indexmain">
                 <input type="checkbox" id="menuControl">
+                <!-- header -->
                 <div class="headerContent">
                     <div class="logo">
                         <a href="./index.html"><img src="./assets/img/logo/regHotels.jpg"
@@ -45,11 +45,11 @@
                         </a>
                         <a href="./menu.html">Menu</a>
                         <a href="./information.html">Information</a>
-                        <a href="./chef.html">Chef</a>
+                        <a href="./chef.html">ChefTeam</a>
+                        <a id="SignInBtn" style="cursor:pointer;">SignIn</a>
                     </nav>
                 </div>
-
-
+                <!-- 餐館介紹 -->
                 <div class="row">
                     <div class=" col-12 titleContne">
                         <div class="row .no-gutters">
@@ -75,8 +75,7 @@
                         </p>
                     </div>
                 </div>
-
-
+                <!-- 3個成分內容介紹 -->
                 <div class="row foodContentAll">
                     <div class="col-xl-4 col-12 foodContent">
                         <img class="roundImg" src="./assets/img/picColor/00566.jpg" width="50%">
@@ -116,7 +115,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- chef介紹 -->
                 <div class="row" id="chef">
                     <div class="col-xl-6 col-12 chefContent images-boxhadow">
                         <img class="chefImg" src="./assets/img/picColor/chef03.jpg" width=95%">
@@ -153,7 +152,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- footer -->
             <div class="row">
                 <div class=" col-12">
                     <footer id="footer">
@@ -193,27 +192,27 @@
                             <div class="container">
                                 <div class="network">
                                     <a href="https://www.facebook.com" title="facebook">
-                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                        <span style="font-size: 3em; color:  #34465d;">
                                             <i class="fab fa-facebook-square"></i>
                                         </span>
                                     </a>
                                     <a href="https://www.google.com" title="google">
-                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                        <span style="font-size: 3em; color:  #34465d;">
                                             <i class="fab fa-google-plus-square"></i>
                                         </span>
                                     </a>
                                     <a href="https://www.github.com" title="github">
-                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                        <span style="font-size: 3em; color:  #34465d;">
                                             <i class="fab fa-github-square"></i>
                                         </span>
                                     </a>
                                     <a href="https://www.instagram.com" title="instagram">
-                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                        <span style="font-size: 3em; color:  #34465d;">
                                             <i class="fab fa-instagram"></i>
                                         </span>
                                     </a>
                                     <a href="https://www.twitter.com" title="twitter">
-                                        <span style="font-size: 3em; color: Mediumslateblue;">
+                                        <span style="font-size: 3em; color: #34465d;">
                                             <i class="fab fa-twitter-square"></i>
                                         </span>
                                     </a>
@@ -226,20 +225,59 @@
                                 </p>
                             </div>
                         </div>
-
                     </footer>
-
                 </div>
             </div>
-
-
-
         </div>
+
+        <!-- 蓋板廣告 -->
         <div id="ad-content">
             <div id="ad">
-                <img src="../lapasta/assets/img/ad/ad02.jpg">
+                <div class="ad-img-box">
+                    <img src='./assets/img/ad/ad02.jpg' class="ad-img">
+                    <div class="popover-box-btn chef-top ad-close-btn" id="ad-btn">
+                        <span>
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- 登入頁面 -->
+        <div class="popovers" id="singin-box">
+            <div class="popovers-Box">
+                <div id="a01">
+                    <div class="inputCBox">
+                        <button id="close">X</button>
+                        <div class="titleContent">
+                            <h3 class="title">welcome</h3>
+                        </div>
+                        <div class="inputContent">
+                            <input class="email" type="text" placeholder="請輸入電子信箱 E-mail" />
+                            <input class="password" type="text" placeholder="請輸入6-15碼英數混和密碼" />
+                            <p>英文字母需區分大小寫</p>
+                            <div class="verification">
+                                <input class="sixnumber" type="text" placeholder="請輸入右圖6碼數字" />
+                                <img class="sixnumberIMG" src="./assets/img/signin/777.jpg">
+                            </div>
+                        </div>
+                        <div class="buttonContent">
+                            <button class="button" type="button">確認</button>
+                            <label>
+                                <input class="checkbox" type="checkbox"> 記住我的帳號
+                            </label>
+                        </div>
+                        <div class="textContent">
+                            <div class="text">
+                                <a href="#">免費註冊</a>
+                                <a href="#">忘記密碼</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="./assets/js/index.js"></script>
     </body>
 
