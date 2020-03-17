@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import HomePage from './views/HomePage';
 import AboutPage from './views/AboutPage';
@@ -18,12 +18,12 @@ const App = props => {
         <HashRouter>
             <Switch>
                 <Route exact path="/" component={HomePage} />
-                <Route path="/About" component={AboutPage} />
-                <Route path="/MainDish" component={MainDishPage} />
-                <Route path="/Works" component={WorksPage} />
-                <Route path="/TableForBacil" component={TableForBacil} />
-                <Route path="/TableForCream" component={TableForCream} />
-                <Route path="/TableForTomato" component={TableForTomato} />
+                <Route path="/about" component={AboutPage} />
+                <Route path="/mainDish" component={MainDishPage} />
+                <Route path="/works" component={WorksPage} />
+                <Route path="/tableForBacil" component={TableForBacil} />
+                <Route path="/tableForCream" component={TableForCream} />
+                <Route path="/tableForTomato" component={TableForTomato} />
                 <Route render={() => <p>Not found</p>} />
             </Switch>
         </HashRouter>

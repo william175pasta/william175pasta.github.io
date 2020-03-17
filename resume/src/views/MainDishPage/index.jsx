@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import Header from '../../components/Header/Header';
+
+import Header from '../../components/Header';
 import Footer from '../../components/Footer/Footer';
 
 import Grid from '@material-ui/core/Grid';
@@ -49,93 +49,91 @@ const user = {
  */
 const MainDishPage = props => {
     return (
-        <div>
-            <Header />
-            <React.Fragment>
-                <CssBaseline />
-                <Container maxWidth="lg">
-                    <Paper>
-                        <Typography component="div" style={{ backgroundColor: '#eee', padding: '10px' }}>
-                            <div>
-                                <Grid container spacing={3} className="cards">
-                                    <Grid item xs={12}>
-                                        <h2>{user.title[0]}</h2>
-                                    </Grid>
-                                    <Grid item xs={12} sm={4} className="cardsContent">
-                                        <Card className="cardsContent">
-                                            <NavLink to="/TableForTomato">
-                                                <CardActionArea>
-                                                    <img src={logo1} style={{ width: '100%', height: '140px' }} />
-                                                    <CardContent>
-                                                        <Typography gutterBottom variant="h5" component="h2">
-                                                            <RestaurantIcon />
-                                                            {user.sauce[0].title}
-                                                        </Typography>
-                                                        <Typography variant="body2" color="textSecondary" component="p">
-                                                            {user.sauce[0].desc}
-                                                        </Typography>
-                                                    </CardContent>
-                                                </CardActionArea>
-                                            </NavLink>
-                                            <CardActions>
-                                                <FoodPractices name={user.sauce[0].title} />
-                                            </CardActions>
-                                        </Card>
-                                    </Grid>
-                                    <Grid item xs={12} sm={4} className="cardsContent">
-                                        <Card className="cardsContent">
-                                            <NavLink to="/TableForBacil">
-                                                <CardActionArea>
-                                                    <img src={logo2} style={{ width: '100%', height: '140px' }} />
-                                                    <CardContent>
-                                                        <Typography gutterBottom variant="h5" component="h2">
-                                                            <RestaurantIcon />
-                                                            {user.sauce[1].title}
-                                                        </Typography>
-                                                        <Typography variant="body2" color="textSecondary" component="p">
-                                                            {user.sauce[1].desc}
-                                                        </Typography>
-                                                    </CardContent>
-                                                </CardActionArea>
-                                            </NavLink>
-                                            <CardActions>
-                                                <FoodPractices name={user.sauce[1].title} />
-                                            </CardActions>
-                                        </Card>
-                                    </Grid>
-                                    <Grid item xs={12} sm={4} className="cardsContent">
-                                        <Card className="cardsContent">
-                                            <NavLink to="/TableForCream">
-                                                <CardActionArea>
-                                                    <img src={logo3} style={{ width: '100%', height: '140px' }} />
-                                                    <CardContent>
-                                                        <Typography gutterBottom variant="h5" component="h2">
-                                                            <RestaurantIcon />
-                                                            {user.sauce[2].title}
-                                                        </Typography>
-                                                        <Typography variant="body2" color="textSecondary" component="p">
-                                                            {user.sauce[2].desc}
-                                                        </Typography>
-                                                    </CardContent>
-                                                </CardActionArea>
-                                            </NavLink>
-                                            <CardActions>
-                                                <FoodPractices name={user.sauce[2].title} />
-                                            </CardActions>
-                                        </Card>
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <h2>{user.title[1]}</h2>
-                                    </Grid>
-                                    {/* <ImageCarouselTwo /> */}
+        <React.Fragment>
+            <Header color="dark" />
+            <CssBaseline />
+            <Container maxWidth="lg">
+                <Paper>
+                    <Typography component="div" style={{ backgroundColor: '#eee', padding: '10px' }}>
+                        <div>
+                            <Grid container spacing={3} className="cards">
+                                <Grid item xs={12}>
+                                    <h2>{user.title[0]}</h2>
                                 </Grid>
-                            </div>
-                        </Typography>
-                    </Paper>
-                </Container>
-            </React.Fragment>
+                                <Grid item xs={12} sm={4} className="cardsContent">
+                                    <Card className="cardsContent">
+                                        <NavLink to="/TableForTomato">
+                                            <CardActionArea>
+                                                <img src={logo1} style={{ width: '100%', height: '140px' }} />
+                                                <CardContent>
+                                                    <Typography gutterBottom variant="h5" component="h2">
+                                                        <RestaurantIcon />
+                                                        {user.sauce[0].title}
+                                                    </Typography>
+                                                    <Typography variant="body2" color="textSecondary" component="p">
+                                                        {user.sauce[0].desc}
+                                                    </Typography>
+                                                </CardContent>
+                                            </CardActionArea>
+                                        </NavLink>
+                                        <CardActions>
+                                            <FoodPractices name={user.sauce[0].title} />
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={4} className="cardsContent">
+                                    <Card className="cardsContent">
+                                        <NavLink to="/TableForBacil">
+                                            <CardActionArea>
+                                                <img src={logo2} style={{ width: '100%', height: '140px' }} />
+                                                <CardContent>
+                                                    <Typography gutterBottom variant="h5" component="h2">
+                                                        <RestaurantIcon />
+                                                        {user.sauce[1].title}
+                                                    </Typography>
+                                                    <Typography variant="body2" color="textSecondary" component="p">
+                                                        {user.sauce[1].desc}
+                                                    </Typography>
+                                                </CardContent>
+                                            </CardActionArea>
+                                        </NavLink>
+                                        <CardActions>
+                                            <FoodPractices name={user.sauce[1].title} />
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={4} className="cardsContent">
+                                    <Card className="cardsContent">
+                                        <NavLink to="/TableForCream">
+                                            <CardActionArea>
+                                                <img src={logo3} style={{ width: '100%', height: '140px' }} />
+                                                <CardContent>
+                                                    <Typography gutterBottom variant="h5" component="h2">
+                                                        <RestaurantIcon />
+                                                        {user.sauce[2].title}
+                                                    </Typography>
+                                                    <Typography variant="body2" color="textSecondary" component="p">
+                                                        {user.sauce[2].desc}
+                                                    </Typography>
+                                                </CardContent>
+                                            </CardActionArea>
+                                        </NavLink>
+                                        <CardActions>
+                                            <FoodPractices name={user.sauce[2].title} />
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <h2>{user.title[1]}</h2>
+                                </Grid>
+                                {/* <ImageCarouselTwo /> */}
+                            </Grid>
+                        </div>
+                    </Typography>
+                </Paper>
+            </Container>
             <Footer />
-        </div>
+        </React.Fragment>
     );
 };
 

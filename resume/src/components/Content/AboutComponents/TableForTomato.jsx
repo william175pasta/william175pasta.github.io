@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from '../../../components/Header/Header';
-import Footer from '../../../components/Footer/Footer';
+import Header from '../../Header';
+import Footer from '../../Footer/Footer';
 
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';

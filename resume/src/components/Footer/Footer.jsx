@@ -1,9 +1,8 @@
 import React from 'react';
-// import Favorite from "@material-ui/icons/Favorite";
+
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import footer2 from '../../images/footer/footer-background.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';

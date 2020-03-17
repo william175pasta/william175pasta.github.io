@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 
-import Header from '../../components/Header/Header';
+import Header from '../../components/Header';
 import Footer from '../../components/Footer/Footer';
 
 import Grid from '@material-ui/core/Grid';
@@ -48,145 +48,139 @@ const woksInformation = {
 
 const WorksPage = () => {
     return (
-        <div>
-            <Header />
-            <div>
-                <div>
-                    <React.Fragment>
-                        <CssBaseline />
-                        <Container maxWidth="lg">
-                            <Paper>
-                                <Typography component="div" style={{ backgroundColor: '#eee', padding: '10px' }}>
-                                    <div>
-                                        <Grid container spacing={3} className="cards">
-                                            <Grid item xs={12}>
-                                                <h2>{user.title[0]}</h2>
-                                            </Grid>
+        <React.Fragment>
+            <Header color="dark" />
+            <CssBaseline />
+            <Container maxWidth="lg">
+                <Paper>
+                    <Typography component="div" style={{ backgroundColor: '#eee', padding: '10px' }}>
+                        <div>
+                            <Grid container spacing={3} className="cards">
+                                <Grid item xs={12}>
+                                    <h2>{user.title[0]}</h2>
+                                </Grid>
 
-                                            <Grid item xs={12} sm={4} className="cardsContent">
-                                                <Card className="cardsContent">
-                                                    <CardActionArea>
-                                                        <img src={logo1} style={{ width: '100%', height: '140px' }} />
-                                                        <CardContent>
-                                                            <Typography gutterBottom variant="h5" component="h2">
-                                                                {user.works[0].name}
-                                                            </Typography>
-                                                            <Typography
-                                                                variant="body2"
-                                                                color="textSecondary"
-                                                                component="p"
-                                                            >
-                                                                <CallOutlinedIcon />
-                                                                {user.works[0].phone}
-                                                            </Typography>
-                                                        </CardContent>
-                                                    </CardActionArea>
-                                                    <CardActions>
-                                                        <Button size="small" variant="contained">
-                                                            <a
-                                                                href="https://www.regenthotels.com/tw/regent-taipei/dining/outside-dining/just-italian"
-                                                                target="_blank"
-                                                            >
-                                                                {' '}
-                                                                Link
-                                                            </a>
-                                                        </Button>
-                                                        <WorksPopover
-                                                            address={woksInformation.address[0]}
-                                                            tell={woksInformation.time[0]}
-                                                        />
-                                                    </CardActions>
-                                                </Card>
-                                            </Grid>
-                                            <Grid item xs={12} sm={4} className="cardsContent">
-                                                <Card className="cardsContent">
-                                                    <CardActionArea>
-                                                        <img src={logo2} style={{ width: '100%', height: '140px' }} />
-                                                        <CardContent>
-                                                            <Typography gutterBottom variant="h5" component="h2">
-                                                                {user.works[1].name}
-                                                            </Typography>
-                                                            <Typography
-                                                                variant="body2"
-                                                                color="textSecondary"
-                                                                component="p"
-                                                            >
-                                                                <CallOutlinedIcon />
-                                                                {user.works[1].phone}
-                                                            </Typography>
-                                                        </CardContent>
-                                                    </CardActionArea>
-                                                    <CardActions>
-                                                        <Button size="small" variant="contained">
-                                                            <a href="https://www.facebook.com/175Pasta" target="_blank">
-                                                                {' '}
-                                                                Link
-                                                            </a>
-                                                        </Button>
-                                                        <WorksPopover
-                                                            address={woksInformation.address[1]}
-                                                            tell={woksInformation.time[1]}
-                                                        />
-                                                    </CardActions>
-                                                </Card>
-                                            </Grid>
-                                            <Grid item xs={12} sm={4} className="cardsContent">
-                                                <Card className="cardsContent">
-                                                    <CardActionArea>
-                                                        <img src={logo3} style={{ width: '100%', height: '140px' }} />
-                                                        <CardContent>
-                                                            <Typography gutterBottom variant="h5" component="h2">
-                                                                {user.works[2].name}
-                                                            </Typography>
-                                                            <Typography
-                                                                variant="body2"
-                                                                color="textSecondary"
-                                                                component="p"
-                                                            >
-                                                                <CallOutlinedIcon />
-                                                                {user.works[2].phone}
-                                                            </Typography>
-                                                        </CardContent>
-                                                    </CardActionArea>
-                                                    <CardActions>
-                                                        <Button size="small" variant="contained">
-                                                            <a href="http://www.lapasta.com.tw/" target="_blank">
-                                                                Link
-                                                            </a>
-                                                        </Button>
-                                                        <Modal woksInformation={woksInformation} />
-                                                    </CardActions>
-                                                </Card>
-                                            </Grid>
-                                            <Grid item xs={12}>
-                                                <h2>{user.title[1]}</h2>
-                                            </Grid>
-                                            {user.works.map((item, index) => {
-                                                const { name, title, time } = item;
-                                                const indexTitle = index + 1;
-                                                return (
-                                                    <Grid item xs={12} sm={4} key={index}>
-                                                        <div>
-                                                            <h5>WORK {indexTitle}</h5>
-                                                            <ul>
-                                                                <li>公司名稱 : {name}</li>
-                                                                <li>工作職稱 : {title}</li>
-                                                                <li>在職時間 : {time}</li>
-                                                            </ul>
-                                                        </div>
-                                                    </Grid>
-                                                );
-                                            })}
+                                <Grid item xs={12} sm={4} className="cardsContent">
+                                    <Card className="cardsContent">
+                                        <CardActionArea>
+                                            <img src={logo1} style={{ width: '100%', height: '140px' }} />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    {user.works[0].name}
+                                                </Typography>
+                                                <Typography
+                                                    variant="body2"
+                                                    color="textSecondary"
+                                                    component="p"
+                                                >
+                                                    <CallOutlinedIcon />
+                                                    {user.works[0].phone}
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" variant="contained">
+                                                <a
+                                                    href="https://www.regenthotels.com/tw/regent-taipei/dining/outside-dining/just-italian"
+                                                    target="_blank"
+                                                >
+                                                    {' '}
+                                                    Link
+                                                </a>
+                                            </Button>
+                                            <WorksPopover
+                                                address={woksInformation.address[0]}
+                                                tell={woksInformation.time[0]}
+                                            />
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={4} className="cardsContent">
+                                    <Card className="cardsContent">
+                                        <CardActionArea>
+                                            <img src={logo2} style={{ width: '100%', height: '140px' }} />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    {user.works[1].name}
+                                                </Typography>
+                                                <Typography
+                                                    variant="body2"
+                                                    color="textSecondary"
+                                                    component="p"
+                                                >
+                                                    <CallOutlinedIcon />
+                                                    {user.works[1].phone}
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" variant="contained">
+                                                <a href="https://www.facebook.com/175Pasta" target="_blank">
+                                                    {' '}
+                                                    Link
+                                                </a>
+                                            </Button>
+                                            <WorksPopover
+                                                address={woksInformation.address[1]}
+                                                tell={woksInformation.time[1]}
+                                            />
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={4} className="cardsContent">
+                                    <Card className="cardsContent">
+                                        <CardActionArea>
+                                            <img src={logo3} style={{ width: '100%', height: '140px' }} />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    {user.works[2].name}
+                                                </Typography>
+                                                <Typography
+                                                    variant="body2"
+                                                    color="textSecondary"
+                                                    component="p"
+                                                >
+                                                    <CallOutlinedIcon />
+                                                    {user.works[2].phone}
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Button size="small" variant="contained">
+                                                <a href="http://www.lapasta.com.tw/" target="_blank">
+                                                    Link
+                                                </a>
+                                            </Button>
+                                            <Modal woksInformation={woksInformation} />
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <h2>{user.title[1]}</h2>
+                                </Grid>
+                                {user.works.map((item, index) => {
+                                    const { name, title, time } = item;
+                                    const indexTitle = index + 1;
+                                    return (
+                                        <Grid item xs={12} sm={4} key={index}>
+                                            <div>
+                                                <h5>WORK {indexTitle}</h5>
+                                                <ul>
+                                                    <li>公司名稱 : {name}</li>
+                                                    <li>工作職稱 : {title}</li>
+                                                    <li>在職時間 : {time}</li>
+                                                </ul>
+                                            </div>
                                         </Grid>
-                                    </div>
-                                </Typography>
-                            </Paper>
-                        </Container>
-                    </React.Fragment>
-                </div>
-            </div>
+                                    );
+                                })}
+                            </Grid>
+                        </div>
+                    </Typography>
+                </Paper>
+            </Container>
             <Footer />
-        </div>
+        </React.Fragment>
     );
 };
 
