@@ -64,7 +64,9 @@ nav a{
     text-align: center;
     color: #ccc;
 }
-
+#SignInBtn{
+    color: #ccc;
+}
 
 
 
@@ -114,7 +116,7 @@ nav a{
 
 .roundImg{
     padding:0px;
-    border-radius: 100px;
+    border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 10px #34465d;
 }
@@ -238,6 +240,18 @@ nav a{
     
     padding-bottom: 20px;
 }
+
+
+#ad-content #ad{
+
+    display: none;
+}
+.ad-img-box{
+    display: none;
+
+}
+
+
 /* 平板 以上*/
 @media screen and (min-width:768px){
         /*縮小左右  */
@@ -277,6 +291,9 @@ nav a{
             color: #34465d;
             font-weight: bold;
             transition: border-top .2s 0s ease
+        }
+        #SignInBtn{
+            color: #34465d;
         }
         .headerContent nav a:hover{
             color: #b92b27; 
@@ -345,14 +362,51 @@ nav a{
             left:0;
             display: none;
         }
-        #ad-content #ad img{
-            position:absolute;
+
+        .ad-img-box{
+            width: 35%;
+            height: auto;
+            position: absolute;
+            display: block;
             margin: auto;
+            top:20px;
+            bottom:20px;
+            right:0;
+            left:0;
+
+        }
+
+        .ad-img{
+            width: 100%;
+            height: 95%;
+            position: absolute;
+            display: block;
             top:0;
             bottom:0;
             right:0;
             left:0;
         }
+
+        .ad-close-btn{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            position: absolute;
+            display: block;
+            top:0;
+            right:2px;
+        }
+
+        .ad-img-box span{
+            font-size: 22px; 
+            color:#DC143C;
+        }
+        .ad-img-box span:hover{
+            color: wheat;
+            cursor: pointer;
+        }
+
+
 
         /* 主廚圖片陰影 效果*/
         .images-boxhadow{
@@ -395,11 +449,165 @@ nav a{
             margin: 20px auto ;
             text-align: center;
             position: relative;
-          }
+            }
 
 }
 
+/* 登入頁畫面 */
 
 
+/* 第一個登入框 */
 
+#singin-box{
+    background-color: rgba(0,0,0,0.2);
+    position:fixed;
+    z-index: 99999;
+    width:100%;
+    height: 100%;
+    background-color: hsla(240, 0%, 50%, 0.6);
+    top:0;
+    left:0;
+    display: none;
+   
+}
+    .popovers-Box{
+    max-width: 310px;
+    height:450px;
+    background-color: #F5F5F5;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top: 60px;
+    z-index: 10;
+    padding:20px;
+    border-radius: 5px;
+  
+  }
+  .close{
+    display: none;
+  }
+  .open{
+    display: block;
+  }
+  /* 第一個登入框 */
+  
+  #a01{
+    margin: 20px 0;
+  }
 
+  #a01 .inputCBox #close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    outline: none;
+    width:30px;
+    height:30px;
+    text-align: center; 
+    border:none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #AA0000;
+    color: #eee;
+    border-top-right-radius: 5px;
+  }   
+  
+  
+  #a01 .inputCBox .titleContent{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 10px;
+  }
+  #a01 .inputCBox .titleContent .title{
+    font-weight: 700;
+    font-size: 32px;
+    color:#AA0000;
+  }
+  
+  #a01 .inputCBox .inputContent{
+    margin-bottom: 20px;
+  }
+  
+  #a01 .inputCBox .inputContent .email{
+    width: 100%;
+    height:40px;
+    margin-bottom: 20px;
+    padding:10px;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+  
+  }
+  #a01 .inputCBox .inputContent .password{
+    width: 100%;
+    height:40px;
+   
+    padding:10px;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+  }
+  #a01 .inputCBox .inputContent p{
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 2px;
+  
+  }
+  
+  #a01 .inputCBox .inputContent .sixnumber{
+    width: 70%;
+    height:40px;
+    padding:10px;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+  }
+  #a01 .inputCBox .inputContent .sixnumberIMG{
+    width: 28%;
+    height:38px;
+    padding-bottom:5px;
+  }
+  #a01 .inputCBox .buttonContent {
+    display:flex;
+    flex-direction: column;
+    
+  }
+  #a01 .inputCBox .buttonContent .button{
+    width: 100%;
+    height:40px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #eee;
+    cursor: pointer;
+    background-color: #eee;
+    color:#AA0000;
+    margin-bottom: 15px;
+  }
+  #a01 .inputCBox .buttonContent .button:hover{
+    color:#eee;
+    background-color:#AA0000;
+  }
+  #a01 .inputCBox .buttonContent label{
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  #a01 .inputCBox .textContent .text a{
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    color: darkblue;
+    margin-left: 10px;
+    font-weight: bold;
+  
+  }
+  #a01 .inputCBox .textContent .text a:hover{
+    color: red;
+  
+  }
+  #a01 .inputCBox .textContent .text{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

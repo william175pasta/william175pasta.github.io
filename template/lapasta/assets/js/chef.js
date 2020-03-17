@@ -36,15 +36,11 @@ for (let i = 1; i <= 5; i++) {
     document.querySelector('#popover-box-btn0' + i).addEventListener('click', showPopo);
 }
 
+//登入框 與內建關閉按鈕
+document.querySelector('#SignInBtn').addEventListener('click', function () {
+    document.querySelector('#singin-box').style.display = "block";
+});
 
- // if (name == 'chef01') {
-    //     document.querySelector('#popover02').style.display = "none";
-    //     document.querySelector('#popover01').style.display = "block";
-    // } else if (name == 'chef02') {
-    //     document.querySelector('#popover02').style.display = "block";
-    //     document.querySelector('#popover01').style.display = "none";
-    // } else {
-    //     document.querySelector('#popover01').style.display = "none";
-    //     document.querySelector('#popover02').style.display = "none";
-    // }
-    // e.preventDefault();
+document.querySelector('#close').addEventListener('click', function () {
+    document.querySelector('#singin-box').style.display = " none";
+})
