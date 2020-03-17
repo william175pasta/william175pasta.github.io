@@ -4,20 +4,33 @@
     font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
 } 
 
-.title{
-    margin-top:1px ;
-    margin:0 auto;
-
+.main .title{
+    padding:0 20px;
     width: 100%;
-    background-color: #34465d;
-    color: #eee;
-    
-    text-align: center;
+  
+    color: #686868;
+    text-align:justify
 }
-.title h3{
+.main .title h3{
     line-height: 50px;
     text-align: center;
+    color: #000;
+
 }
+
+.main .title h5{
+    margin-top:10px;
+    text-align: center;
+    color:	#24242e;
+    font-style: italic;
+}
+.main .title .Introduction-chef{
+    border-bottom: 1px solid #cca;
+}
+
+
+
+
 .chefbox{
     margin:20px;
 }
@@ -92,15 +105,12 @@
     0%{
         transform: rotate(0deg);
         /* transform: scaleX(1.1); */
-
     }
     25%{
         transform: rotate(90deg);
-
     }
     50%{
         transform: rotate(180deg);
-
         /* transform: scaleX(2); */
     }
     75%{
@@ -108,7 +118,6 @@
     }
     100%{
         transform: rotate(360deg);
-
         /* transform: scaleX(1); */
     }
 }
@@ -118,13 +127,10 @@
 }
 
 
-
-
-
 .popover-text h4{
     font-weight: bold;
     margin-top: 2px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     border-bottom: 1px solid	#444444;
     color: #fff;
@@ -133,18 +139,18 @@
     list-style: none;
 }
 .popover-text  li{
-    padding:10px;
+    padding:2px 0;
     border-bottom: 1px solid	#AAAAAA;
     letter-spacing: 2px;
-
 }
 
 .popover-chef-content{
     font-weight: bold;
     color: #eee;
     width: 100%;
+    height: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .popover-chef-content-header{
     width: 100%;
@@ -155,11 +161,11 @@
 }
 .chef-name{
     text-align: center;
-    width: 65%;
+    width: 61%;
 }
 .chef-images{
     text-align: center;
-    width: 35%;
+    width: 39%;
 }
 .popover-chef-content-images{
     width: 50%;
@@ -167,6 +173,7 @@
 
 .popover-chef-content-experience li,
 .popover-chef-content-skill li{
+    font-style: italic;
     display: inline-block;
 }
 .popover-chef-content h5{
@@ -179,28 +186,19 @@
    
 }
 .popover-chef-content-experience{
-    margin-left:30px;
+    margin-left:10px;
 }
 
 .popover-chef-content-skill{
-    margin-left:30px;
+    margin-left:10px;
 
 }
-/* #chef01 h6{
-    color: rgba(255,0,0,0.3);
-    position: absolute;
-    font-weight: 700;
-    top:15px;
-    right: 10px;
-    transform:rotate(10deg);
-} */
-
 
 @media screen and (min-width:768px){
    
     /* 主廚右上角五顆星 效果*/
     
-    .title:hover  h3:after{
+    /* .title:hover  h3:after{
         content:"★★★";
         width: 50px;
         color: #34465d;
@@ -213,8 +211,29 @@
         color: #34465d;
         padding: 5px;
         background-color: #EEE;
+    } */
+    .main .title{
+        display: flex;
+        flex-direction: row;
     }
 
+    .main .title .Introduction-chef{
+    padding-right:  18px;
+    margin: 5px;
+    width: 70%;
+    border-right: 1px solid #cca;
+    border-bottom: none;
+
+}
+.Introduction-idea{
+    margin: 5px;
+    padding: 0 18px;
+    width: 30%;
+}
+.Introduction-idea h5{ 
+
+    margin-bottom: 20px;
+}
     .popover-text{
         font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
         border-radius: 3px;
@@ -242,7 +261,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    
+    }
+    .popover-text  li{
+        padding:10px;
+       
     }
     .chef-name{
         text-align: center;
