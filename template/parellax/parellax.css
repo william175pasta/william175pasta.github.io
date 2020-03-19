@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  margin: 0 auto;
 }
 .header {
   width: 100%;
@@ -20,7 +21,7 @@ html {
 
 .background-one {
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-image: url("./img/pasta01.jpg");
 }
 
