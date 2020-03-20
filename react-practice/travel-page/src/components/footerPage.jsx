@@ -1,13 +1,17 @@
 import React from "react";
+import styles from "./footerStyle.js";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(styles);
 
 const Footer = () => {
-    return (
-        <footer
-            style={{ backgroundColor: "#009688", color: "#fff", marginBottom: "0" }}
-        >
-            <p>Copyright © 2020_Will</p>
-        </footer>
-    );
+  const classes = useStyles();
+
+  return (
+    <footer className={classes.footer}>
+      <p>Copyright © 2020_william</p>
+    </footer>
+  );
 };
 
 export default Footer;
