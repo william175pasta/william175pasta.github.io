@@ -1,0 +1,175 @@
+.header {
+    position: fixed;
+    color: #eee;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #3b5999;
+    opacity: 0.8;
+    text-align: center;
+    color: #eee;
+    z-index: 10;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #3b5999;
+    color: #eee;
+    text-align: center;
+    z-index: 1;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+/* 卡片區 */
+.cards {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card {
+    margin: 20px;
+    max-width: 320px;
+    cursor: pointer;
+}
+
+.card h5 {
+    background-color: #dddddd;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.cards-container {
+    margin: 20px;
+    padding: 15px;
+}
+
+.cards-container p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.card-btn-box {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.card .card-btn {
+    width: 90px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #bd081c;
+    color: #eee;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+.card .card-btn:hover {
+    background-color: #3b5999;
+    color: #eee;
+}
+/* 卡片滑鼠滑過效果 */
+.card:hover {
+    box-shadow: 0 0 10px #ccc;
+    animation-direction: reverse;
+    /* box-shadow: 0 0 10px #34465d; */
+    /* transform: scaleX(1.2) scaleY(1.2); */
+    animation: cardhover 0.5s ease-in-out;
+}
+@keyframes cardhover {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.01, 1.01);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.cards-container .flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    body,
+    html {
+        height: 100%;
+    }
+    .header {
+        z-index: 0;
+    }
+    .footer {
+        display: none;
+    }
+
+    .parellax {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+    }
+    .bak-gr01 {
+        background-image: url(../img/105.jpg);
+    }
+
+    .bak-gr02 {
+        background-image: url(../img/106.jpg);
+    }
+    .cards {
+        position: relative;
+        top: 0px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cards-container {
+        background-image: url(../img/108.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-container .flexbox {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .cards-container .flexbox:first-child {
+        margin-top: 80px;
+    }
+
+    .cards-container .flexbox:last-child {
+        margin-bottom: 80px;
+    }
+    .card {
+        max-width: 310px;
+        cursor: pointer;
+    }
+}
