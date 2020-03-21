@@ -1,3 +1,17 @@
+/* 返回大首頁區塊 */
+.backBox {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  width: 50px;
+}
+.alink {
+  text-decoration: none;
+  color: red;
+  font-weight: 700;
+  font-size: 20px;
+}
 .main {
   margin: 40px;
   font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
