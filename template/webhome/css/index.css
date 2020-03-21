@@ -1,3 +1,8 @@
+body,
+html {
+    height: 100%;
+}
+
 .header {
     position: fixed;
     color: #eee;
@@ -67,7 +72,7 @@
     width: 90px;
     height: 45px;
     line-height: 45px;
-    background-color: #b92b27;
+    background-color: #3b5999;
     color: #eee;
     text-decoration: none;
     border-radius: 5px;
@@ -75,7 +80,7 @@
     text-align: center;
 }
 .card .card-btn:hover {
-    background-color: #3b5999;
+    background-color: #b92b27;
     color: #eee;
     font-weight: bold;
 }
@@ -108,10 +113,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    body,
-    html {
-        height: 100%;
-    }
     .header {
         z-index: 0;
     }
@@ -142,7 +143,7 @@
         text-align: center;
     }
     .cards-container {
-        background-image: url(../img/food.webp);
+        background-image: url(../img/food.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
