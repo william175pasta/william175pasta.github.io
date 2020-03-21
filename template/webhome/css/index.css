@@ -43,8 +43,29 @@ html {
 
 .card {
     margin: 20px;
-    max-width: 320px;
+    width: 320px;
     cursor: pointer;
+}
+.card-img {
+    max-width: 320px;
+    height: auto;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+.card:hover {
+    box-shadow: 0 0 10px #b92b27;
+}
+/* 給js吃的屬性 */
+.transform {
+    transform: scale(1.2, 1.2);
+}
+
+/* 不讓變大的圖片效果 洩溢到外面div */
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .card h5 {
@@ -69,39 +90,20 @@ html {
     padding-bottom: 30px;
 }
 .card .card-btn {
-    width: 90px;
-    height: 45px;
-    line-height: 45px;
-    background-color: #3b5999;
-    color: #eee;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    background: #f8efea;
+    color: #b92b27;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     text-align: center;
+    font-weight: bold;
 }
 .card .card-btn:hover {
     background-color: #b92b27;
     color: #eee;
-    font-weight: bold;
-}
-/* 卡片滑鼠滑過效果 */
-.card:hover {
-    box-shadow: 0 0 10px #ccc;
-    animation-direction: reverse;
-    /* box-shadow: 0 0 10px #34465d; */
-    /* transform: scaleX(1.2) scaleY(1.2); */
-    animation: cardhover 0.5s ease-in-out;
-}
-@keyframes cardhover {
-    0% {
-        transform: scale(1, 1);
-    }
-    50% {
-        transform: scale(1.01, 1.01);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
 }
 
 .cards-container .flexbox {
@@ -110,6 +112,55 @@ html {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.text-content {
+    float: left;
+    margin: 10px auto;
+    width: 100%;
+    color: white;
+    height: 80px;
+}
+.text-content .textbox {
+    display: inline-block;
+    width: 33%;
+
+    padding: 5px;
+    margin: 3px;
+    border-radius: 3px;
+}
+.box1 {
+    background-color: #e62250;
+}
+
+.box2 {
+    background-color: #00b7ff;
+}
+.box1 {
+    border: #b94ecc;
+}
+.box3 {
+    background-color: #36a051;
+}
+
+.box4 {
+    background-color: #ff9900;
+}
+
+.box5 {
+    background-color: #35de3e;
+}
+
+.box6 {
+    background-color: #1d3552;
+}
+
+.box7 {
+    background-color: #ff0000;
+}
+
+.box8 {
+    background-color: #ff00dd;
 }
 
 @media screen and (min-width: 768px) {
