@@ -56,6 +56,17 @@ const useStyles = makeStyles({
     color: "red",
     textAlign: "center",
     marginBottom: "30px"
+  },
+  backBox: {
+    position: "fixed",
+    top: "9px",
+    left: "9px",
+    width: "50px"
+  },
+  alink: {
+    color: "red",
+    fontWeight: "700",
+    fontSize: "20px"
   }
 });
 
@@ -190,6 +201,14 @@ const FingerGame = () => {
 
   return (
     <div style={{ fontFamily: "微軟正黑體", padding: "50px 0 " }}>
+      <div className={classes.backBox}>
+        <a
+          className={classes.alink}
+          href="https://william175pasta.github.io/index.html"
+        >
+          ←
+        </a>
+      </div>
       <div className={classes.tilteBox}>
         <div className={classes.title}>
           <h3>猜拳小遊戲</h3>
