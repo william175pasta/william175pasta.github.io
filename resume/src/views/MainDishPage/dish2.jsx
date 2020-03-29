@@ -4,9 +4,19 @@ import dishStyle from "./dishStyle";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
-import logo2 from "../../images/sauce/white/whitelogo.jpg";
+import food01 from "../../assets/img/foods/food01.jpg";
+import food02 from "../../assets/img/foods/food02.jpg";
+import food03 from "../../assets/img/foods/food03.jpg";
+import food04 from "../../assets/img/foods/food04.jpg";
+
+import GridContainer from "../../components/Grid/GridContainer";
+import GridItem from "../../components/Grid/GridItem";
 import { NavLink } from "react-router-dom";
 import ModalPopup from "../../components/Content/AboutComponents/modalPopup";
+
+import SentimentSatisfiedAltIcon from "@material-ui/icons/SentimentSatisfiedAlt";
+import WatchLaterIcon from "@material-ui/icons/WatchLater";
+import RestaurantMenuIcon from "@material-ui/icons/RestaurantMenu";
 const useStyles = makeStyles(dishStyle);
 const user = {
   sauce: [
@@ -25,23 +35,120 @@ const Dish2 = () => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <NavLink to="/TableForBacil" style={{ textDecoration: "none" }}>
-        <CardActionArea>
-          <img src={logo2} style={{ width: "100%", height: "140px" }} />
-          <CardContent>
-            <h2>CreamSauce</h2>
-            <p>
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </p>
-          </CardContent>
-        </CardActionArea>
-      </NavLink>
-      <div className={classes.activeArea}>
-        <ModalPopup name={user.sauce[2].title} />
-      </div>
-    </Card>
+    <GridContainer>
+      <GridItem item xs={12} sm={3}>
+        <Card className={classes.root}>
+          <NavLink to="/TableForBacil" style={{ textDecoration: "none" }}>
+            <CardActionArea>
+              <img src={food01} style={{ width: "100%", height: "150px" }} />
+              <CardContent>
+                <h2>爐烤美國prime肋眼</h2>
+                <div>
+                  <SentimentSatisfiedAltIcon />
+                  &emsp;★★★★★★
+                  <div className={classes.percent}>
+                    難易度 :
+                    <div className={classes.progressbarBack}>
+                      <div
+                        className={classes.progressbarFront}
+                        style={{ width: "90px" }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </CardActionArea>
+          </NavLink>
+          <div className={classes.activeArea}>
+            <ModalPopup name={user.sauce[2].title} />
+          </div>
+        </Card>
+      </GridItem>
+      <GridItem item xs={12} sm={3}>
+        <Card className={classes.root}>
+          <NavLink to="/TableForBacil" style={{ textDecoration: "none" }}>
+            <CardActionArea>
+              <img src={food02} style={{ width: "100%", height: "150px" }} />
+              <CardContent>
+                <h2>香煎挪威鮭魚排</h2>
+                <div>
+                  <SentimentSatisfiedAltIcon />
+                  &emsp;★★★★★
+                  <div className={classes.percent}>
+                    難易度 :
+                    <div className={classes.progressbarBack}>
+                      <div
+                        className={classes.progressbarFront}
+                        style={{ width: "82px" }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </CardActionArea>
+          </NavLink>
+          <div className={classes.activeArea}>
+            <ModalPopup name={user.sauce[2].title} />
+          </div>
+        </Card>
+      </GridItem>
+      <GridItem item xs={12} sm={3}>
+        <Card className={classes.root}>
+          <NavLink to="/TableForBacil" style={{ textDecoration: "none" }}>
+            <CardActionArea>
+              <img src={food03} style={{ width: "100%", height: "150px" }} />
+              <CardContent>
+                <h2>迷迭香嫩煎雞腿排</h2>
+                <div>
+                  <SentimentSatisfiedAltIcon />
+                  &emsp;★★★★
+                  <div className={classes.percent}>
+                    難易度 :
+                    <div className={classes.progressbarBack}>
+                      <div
+                        className={classes.progressbarFront}
+                        style={{ width: "55px" }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </CardActionArea>
+          </NavLink>
+          <div className={classes.activeArea}>
+            <ModalPopup name={user.sauce[2].title} />
+          </div>
+        </Card>
+      </GridItem>
+      <GridItem item xs={12} sm={3}>
+        <Card className={classes.root}>
+          <NavLink to="/TableForBacil" style={{ textDecoration: "none" }}>
+            <CardActionArea>
+              <img src={food04} style={{ width: "100%", height: "150px" }} />
+              <CardContent>
+                <h2>酥烤脆皮德國豬腳</h2>
+                <div>
+                  <SentimentSatisfiedAltIcon />
+                  &emsp;★★★★★
+                  <div className={classes.percent}>
+                    難易度 :
+                    <div className={classes.progressbarBack}>
+                      <div
+                        className={classes.progressbarFront}
+                        style={{ width: "70px" }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </CardActionArea>
+          </NavLink>
+          <div className={classes.activeArea}>
+            <ModalPopup name={user.sauce[2].title} />
+          </div>
+        </Card>
+      </GridItem>
+    </GridContainer>
   );
 };
 export default Dish2;

@@ -17,6 +17,21 @@ const dishStyle = {
       background: "	#CC0000",
       borderRadius: "5px"
     }
+  },
+  percent: {
+    padding: "3px 0",
+    fontSize: "14px"
+  },
+  progressbarBack: {
+    marginTop: "5px",
+
+    width: "100px",
+    height: "5px",
+    backgroundColor: "#ccc"
+  },
+  progressbarFront: {
+    height: "5px",
+    backgroundColor: "red"
   }
 };
 export default dishStyle;

@@ -9,19 +9,7 @@ import { NavLink } from "react-router-dom";
 import FoodPractices from "../../components/Content/AboutComponents/FoodPractices";
 import ModalPopup from "../../components/Content/AboutComponents/modalPopup";
 const useStyles = makeStyles(dishStyle);
-const user = {
-  sauce: [
-    {
-      title: "TomatoSauce"
-    },
-    {
-      title: "BasilSauce"
-    },
-    {
-      title: "CreamSauce"
-    }
-  ]
-};
+
 const Dish3 = () => {
   const classes = useStyles();
 
@@ -31,7 +19,7 @@ const Dish3 = () => {
         <CardActionArea>
           <img src={logo3} style={{ width: "100%", height: "140px" }} />
           <CardContent>
-            <h2>BasilSauce</h2>
+            <h2>綠蓉青醬</h2>
             <p>
               Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica
