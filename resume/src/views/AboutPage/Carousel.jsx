@@ -42,7 +42,7 @@ const Carousel = () => {
           <GridItem xs={12} sm={12} md={8}>
             <Slider
               {...sliderSetting}
-              style={{ width: "60%", margin: "0 auto" }}
+              style={{ width: "75%", margin: "0 auto" }}
             >
               {imageList.map((item, index) => {
                 return (
