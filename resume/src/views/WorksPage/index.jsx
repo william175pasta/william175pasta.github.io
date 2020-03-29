@@ -29,7 +29,7 @@ const WorksPage = () => {
 
         <div className={classes.container}>
           <Grid item xs={12} className={classes.title}>
-            <h1>Experience</h1>
+            <h1>工作經歷</h1>
           </Grid>
 
           <div className={classes.root}>
