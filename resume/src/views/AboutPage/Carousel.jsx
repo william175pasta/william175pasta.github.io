@@ -40,14 +40,18 @@ const Carousel = () => {
       <Fragment>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <Slider {...sliderSetting}>
+            <Slider
+              {...sliderSetting}
+              style={{ width: "60%", margin: "0 auto" }}
+            >
               {imageList.map((item, index) => {
                 return (
                   <div key={index}>
                     <img
                       src={item}
                       style={{
-                        width: "100%"
+                        width: "100%",
+                        margin: "18px auto"
                       }}
                     />
                   </div>
