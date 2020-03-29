@@ -13,8 +13,8 @@ const Aboutcontact = () => {
   return (
     <GridContainer justify="center">
       <GridItem xs={12} sm={12} md={8}>
-        <div className={classes.aboutmeContent}>
-          <h2 className={classes.contacttext}>與我聯絡</h2>
+        <div className={classes.aboutmeContact}>
+          <h2 className={classes.contacttitle}>與我聯絡</h2>
           <p className={classes.contacttext}>Email : bill5986@gmail.com</p>
           <p className={classes.contacttext}>Phone : 0939774066</p>
           <p className={classes.contacttext}>
