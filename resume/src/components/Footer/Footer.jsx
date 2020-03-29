@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center",
     fontSize: "14px",
     padding: "10px",
-    position: "fixed",
+    position: "relative",
     left: 0,
     bottom: 0,
     width: "100%",
