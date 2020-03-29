@@ -10,7 +10,6 @@ import Aboutcontact from "./aboutcontact";
 
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "./aboutmePage";
-import image from "../../assets/img/home/bg.jpg";
 
 const useStyles = makeStyles(styles);
 /**
