@@ -1,179 +1,163 @@
-
-.main{
-    margin: 10px;
-    font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
+html,
+body {
+  margin: 0 auto;
+}
+.main {
+  margin: 10px;
+  font-family: "Openf Sans", "Microsoft JhengHei", sans-serif;
 }
 
-
-.newDishes{
-    display: flex;
-    flex-direction: column;
-   padding:0 10px;
+.newDishes {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
-.asideBar{
-    position: relative;
-    margin-top: 15px;
-    height: 580px;
-   
-    
+.asideBar {
+  position: relative;
+  margin-top: 15px;
+  height: 580px;
 }
-.mainBar{
-    margin-top: 15px;
-    display: none;
+.mainBar {
+  margin-top: 15px;
+  display: none;
 }
 
-.openmainBar{
-
-    display: block;
+.openmainBar {
+  display: block;
 }
 
+.newDishes .asideBar .title1 {
+  background-color: #f8efea;
+  text-align: center;
+}
+.newDishes .asideBar .title2 {
+  background-color: #f8efea;
 
-.newDishes .asideBar .title1{
-    background-color:	#f8efea;
-    text-align: center;
+  text-align: center;
 }
-.newDishes .asideBar .title2{
-  
-    background-color:	 #f8efea;
-
-    text-align: center;
+.newDishes .asideBar h4 {
+  color: #ff3333;
+  height: 40px;
+  line-height: 40px;
 }
-.newDishes .asideBar h4{
-    color:	#FF3333; 
-    height:40px;
-    line-height:40px
-}
-.menubox{
-    width: 100%;
-    margin-bottom: 20px;
+.menubox {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.menubox ul li{
-    text-align: center;
-    padding: 0;
-    /* transition: all .3s 0s ease; */
+.menubox ul li {
+  text-align: center;
+  padding: 0;
+  /* transition: all .3s 0s ease; */
 }
-.menubox ul li a{
-    padding: 12px;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-}
-
-
-
-
-.menubox ul li:hover{
-    background-color:#CCEEFF;
-}
-.menubox ul li a:hover{
-    color: red;
-    font-weight: 700;
+.menubox ul li a {
+  padding: 12px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
 }
 
-
-
-
-
-
+.menubox ul li:hover {
+  background-color: #cceeff;
+}
+.menubox ul li a:hover {
+  color: red;
+  font-weight: 700;
+}
 
 /* main */
-.mainBar .carboxthree{
-    margin-bottom: 15px;
-    
+.mainBar .carboxthree {
+  margin-bottom: 15px;
 }
 
-.mainBar .carboxthree .cardbox{
-    margin-bottom: 10px;
+.mainBar .carboxthree .cardbox {
+  margin-bottom: 10px;
 }
 
-.mainBar .carboxthree .cardbox h5{
-    color: #af0606;
-    font-weight: 700;
+.mainBar .carboxthree .cardbox h5 {
+  color: #af0606;
+  font-weight: 700;
 }
-.mainBar .carboxthree .cardbox p{
-    color: black;
-    transition: all .5s 0s ease;
-}
-
-.mainBar .carboxthree .cardbox p:hover{
-    color: #FFBB00;
-   
-    
+.mainBar .carboxthree .cardbox p {
+  color: black;
+  transition: all 0.5s 0s ease;
 }
 
-.mainBar .carboxthree .cardbox a{
-    background-color: 	#0077b5;
-    border: none;
-    outline: none;
-    color: #eee;
-    transition: all .6s 0s ease;
-    
-}
-.mainBar .carboxthree .cardbox a:hover{
-    color: #eee;
-    background-color: #ff5700;
-    
+.mainBar .carboxthree .cardbox p:hover {
+  color: #ffbb00;
 }
 
-.btnbox{
-    display: flex;
-    justify-content: flex-end;
+.mainBar .carboxthree .cardbox a {
+  background-color: #0077b5;
+  border: none;
+  outline: none;
+  color: #eee;
+  transition: all 0.6s 0s ease;
+}
+.mainBar .carboxthree .cardbox a:hover {
+  color: #eee;
+  background-color: #ff5700;
+}
+
+.btnbox {
+  display: flex;
+  justify-content: flex-end;
 }
 /* HOT特效 */
 @keyframes hot-food {
-    0%{ color: red;
-        background-color:#eee;;}
-    100%{  color:#eee;
-        background-color:red;}
-}
-.hot-div{
-    
-    position: absolute;
-    width: 20%;
-    right: 0;
-    top: 0;
-    text-align: center;
+  0% {
+    color: red;
+    background-color: #eee;
+  }
+  100% {
+    color: #eee;
     background-color: red;
-    color:#eee;
-    padding: 1px;
-    animation:  hot-food 1s infinite ease;
+  }
+}
+.hot-div {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  top: 0;
+  text-align: center;
+  background-color: red;
+  color: #eee;
+  padding: 1px;
+  animation: hot-food 1s infinite ease;
 }
 
 /*for 平板以上 */
-@media screen and (min-width:768px){
-    .newDishes{
-        display: flex;
-        flex-direction: row;
-    }
-    .main{
-        margin:20px auto;
-    }
-    .cardbox{
-        position: relative;
-        display: flex;
-        align-items: stretch;
-    }
-    .cardbox .card:hover{
-        box-shadow: 0 -5px 8px -5px  red;
-    }
-    .menubox{
-        width: 80%;
-        margin-bottom: 20px;
-    }
-    
-    .newDishes .aside01{
-        position: absolute;
-        right: 0;
-     
-    }
-    .newDishes .aside02{
-            position: absolute;
-            right: 0;
-            top:280px; 
-    }
-    .newDishes .asideBar h4{
-        font-weight: bold;
-    }
+@media screen and (min-width: 768px) {
+  .newDishes {
+    display: flex;
+    flex-direction: row;
+  }
+  .main {
+    margin: 20px auto;
+  }
+  .cardbox {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+  }
+  .cardbox .card:hover {
+    box-shadow: 0 -5px 8px -5px red;
+  }
+  .menubox {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 
+  .newDishes .aside01 {
+    position: absolute;
+    right: 0;
+  }
+  .newDishes .aside02 {
+    position: absolute;
+    right: 0;
+    top: 280px;
+  }
+  .newDishes .asideBar h4 {
+    font-weight: bold;
+  }
 }
